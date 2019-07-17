@@ -1,4 +1,4 @@
-# Projek Android TIMESIndonesia
+# Android TIMESIndonesia
 ``` 
 Developer :
 1. Rosandi Fila Setiawan
