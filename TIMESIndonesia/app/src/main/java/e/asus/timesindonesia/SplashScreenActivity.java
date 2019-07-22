@@ -15,11 +15,11 @@ public class SplashScreenActivity extends Activity {
         Thread thread = new Thread(){
             public void run(){
                 try {
-                    sleep(4000);
+                    sleep(3000);
                 } catch (InterruptedException e){
                     e.printStackTrace();
                 } finally {
-                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashScreenActivity.this, HomeActivity.class));
                     finish();
                 }
             }
