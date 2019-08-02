@@ -149,33 +149,43 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Trending"
-                        android:textSize="30dp"
+                        android:textSize="27dp"
                         android:id="@+id/tren"
                         android:textColor="#1B1A1A"/>
                     <android.support.v7.widget.CardView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="13dp"
+                        >
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
+                                android:layout_height="120dp"
                                 android:text="1."
                                 android:textColor="@color/background"
-                                android:textSize="30dp"
+                                android:textSize="25dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="15dp"
-                                android:id="@+id/nomer1"/>
+                                android:id="@+id/nomer1"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_vertical"/>
                             <android.support.v7.widget.CardView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="120dp"
                                 android:id="@+id/card1"
                                 android:layout_toRightOf="@id/nomer1"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="15dp"
                                 >
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -205,31 +215,39 @@
                                         android:layout_height="100dp"
                                         android:src="@drawable/berita"
                                         android:layout_toRightOf="@+id/judul1"
-                                        android:layout_marginLeft="100dp"/>
+                                        android:layout_marginLeft="100dp"
+                                        />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
                             //card 2
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
+                                android:layout_height="120dp"
                                 android:text="2."
-                                android:textSize="30dp"
+                                android:textSize="25dp"
                                 android:textColor="@color/background"
                                 android:layout_below="@id/nomer1"
                                 android:id="@+id/angka2"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="15dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_vertical"/>
 
                             <android.support.v7.widget.CardView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="120dp"
                                 android:id="@+id/card2"
                                 android:layout_below="@id/card1"
-                                android:layout_toRightOf="@+id/angka2">
+                                android:layout_toRightOf="@+id/angka2"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="15dp">
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -259,31 +277,39 @@
                                         android:layout_height="100dp"
                                         android:src="@drawable/berita"
                                         android:layout_toRightOf="@+id/judul2"
-                                        android:layout_marginLeft="100dp"/>
+                                        android:layout_marginLeft="100dp"
+                                        />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
                             //card 3
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
+                                android:layout_height="120dp"
                                 android:text="3."
                                 android:textColor="@color/background"
-                                android:textSize="30dp"
+                                android:textSize="25dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="15dp"
                                 android:id="@+id/angka3"
                                 android:layout_below="@id/angka2"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_vertical"
                                 />
                             <android.support.v7.widget.CardView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="120dp"
                                 android:id="@+id/card3"
                                 android:layout_toRightOf="@id/angka3"
                                 android:layout_below="@id/card2"
-                                >
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="15dp">                                >
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -319,14 +345,17 @@
                             //card 4
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
+                                android:layout_height="120dp"
                                 android:text="4."
                                 android:textColor="@color/background"
-                                android:textSize="30dp"
+                                android:textSize="25dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="15dp"
                                 android:id="@+id/angka4"
                                 android:layout_below="@id/angka3"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_vertical"
                                 />
                             <android.support.v7.widget.CardView
                                 android:layout_width="wrap_content"
@@ -334,10 +363,15 @@
                                 android:id="@+id/card4"
                                 android:layout_toRightOf="@id/angka4"
                                 android:layout_below="@id/card3"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="15dp"
                                 >
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -373,25 +407,33 @@
                             //card 5
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
+                                android:layout_height="120dp"
                                 android:text="5."
                                 android:textColor="@color/background"
-                                android:textSize="30dp"
+                                android:textSize="25dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="15dp"
                                 android:id="@+id/angka5"
                                 android:layout_below="@id/angka4"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center_vertical"
                                 />
                             <android.support.v7.widget.CardView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="120dp"
                                 android:id="@+id/card5"
                                 android:layout_toRightOf="@id/angka5"
                                 android:layout_below="@id/card4"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                app:cardCornerRadius="15dp"
                                 >
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
