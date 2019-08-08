@@ -1,498 +1,883 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //logo atas
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_logo"
+            android:layout_centerInParent="true"
+            android:id="@+id/top"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/top"
+            app:srcCompat="@drawable/ic_more_vert_white_24dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:orientation="vertical">
+        android:id="@+id/konten"
+        android:layout_below="@id/logo"
+        android:scrollbars="none">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/background"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            android:id="@+id/logo"
-            >
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:src="@drawable/img_logo"
-                android:layout_centerInParent="true"
-                android:id="@+id/top"
-                />
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_toRightOf="@id/top"
-                    app:srcCompat="@drawable/ic_more_vert_white_24dp"
-                    android:layout_centerInParent="true"
-                    />
-        </RelativeLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <LinearLayout
+
+            //button bunder
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/background"
+                android:id="@+id/tombol_bulat"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bunder"
+                        android:id="@+id/btnHeadline"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_menu_white_24dp"
+                        android:backgroundTint="#E90F3B"
+                        android:layout_marginRight="7dp"
+                        />
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bunder"
+                        android:id="@+id/btnPopuler"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_flag_white_24dp"
+                        android:backgroundTint="#F15121"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"
+                        />
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bunder"
+                        android:id="@+id/btnFokus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"
+                        android:backgroundTint="#F1AC21"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"
+                        />
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bunder"
+                        android:id="@+id/btnFoto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/gallery"
+                        android:backgroundTint="#19A7D3"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"/>
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bunder"
+                        android:id="@+id/btnIndeks"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/index"
+                        android:backgroundTint="#39E61B"
+                        android:layout_marginLeft="7dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    >
+                    <TextView
+                        android:text="Headline"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="Populer"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="Fokus"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="Foto"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="Indeks"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            //trending
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending"
+                android:textSize="27dp"
+                android:id="@+id/tren"
+                android:textColor="#1B1A1A"
+                android:layout_below="@+id/tombol_bulat"
+                android:layout_margin="15dp"/>
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@color/background"
-                    >
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:gravity="center_horizontal|center_vertical">
-
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnHeadline"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_menu_white_24dp"
-                            android:backgroundTint="#E90F3B"
-                            android:layout_marginRight="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnPopuler"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_flag_white_24dp"
-                            android:backgroundTint="#F15121"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnFokus"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"
-                            android:backgroundTint="#F1AC21"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnFoto"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_photo_library_white_24dp"
-                            android:backgroundTint="#19A7D3"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"/>
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnIndeks"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"
-                            android:backgroundTint="#39E61B"
-                            android:layout_marginLeft="7dp"/>
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:gravity="center_horizontal|center_vertical"
-                        >
-                        <TextView
-                            android:text="Headline"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="Populer"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="Fokus"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="Foto"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="Indeks"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            />
-                    </TableRow>
-                </TableLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
+                app:cardCornerRadius="13dp"
+                android:layout_below="@+id/tren"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:id="@+id/cv_tren"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Trending"
-                        android:textSize="27dp"
-                        android:id="@+id/tren"
-                        android:textColor="#1B1A1A"/>
+                        android:layout_height="120dp"
+                        android:text="1."
+                        android:textColor="@color/background"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/nomer1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"/>
                     <android.support.v7.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/card1"
+                        android:layout_toRightOf="@id/nomer1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="15dp"
                         >
                         <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:text="1."
+                                android:layout_height="wrap_content"
+                                android:text="Peristiwa"
+                                android:textSize="20dp"
                                 android:textColor="@color/background"
-                                android:textSize="25dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="15dp"
-                                android:id="@+id/nomer1"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="5dp"
-                                android:gravity="center_vertical"/>
-                            <android.support.v7.widget.CardView
+                                android:id="@+id/judul1"
+                                />
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                        Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:id="@+id/isi1"
+                                android:textSize="14dp"
+                                android:layout_below="@+id/judul1"/>
+                            <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:id="@+id/card1"
-                                android:layout_toRightOf="@id/nomer1"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginRight="10dp"
-                                app:cardCornerRadius="15dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="10dp">
+                                android:layout_height="wrap_content"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp"
+                                android:layout_below="@+id/isi1"/>
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/berita"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toRightOf="@+id/judul1"
+                                android:layout_marginLeft="100dp"
+                                />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    //card 2
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:text="2."
+                        android:textSize="25dp"
+                        android:textColor="@color/background"
+                        android:layout_below="@id/nomer1"
+                        android:id="@+id/angka2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"/>
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        android:id="@+id/judul1"
-                                        />
-                                    <TextView
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/card2"
+                        android:layout_below="@id/card1"
+                        android:layout_toRightOf="@+id/angka2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="15dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Peristiwa"
+                                android:textSize="20dp"
+                                android:textColor="@color/background"
+                                android:id="@+id/judul2"
+                                />
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
                                                 Ruang Sekda Jawa Barat"
-                                        android:textColor="#000000"
-                                        android:id="@+id/isi1"
-                                        android:textSize="14dp"
-                                        android:layout_below="@+id/judul1"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Rabu, 31 Juli 2019"
-                                        android:textSize="12dp"
-                                        android:layout_below="@+id/isi1"/>
-                                    <ImageView
-                                        android:layout_width="300dp"
-                                        android:layout_height="100dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/judul1"
-                                        android:layout_marginLeft="100dp"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-                            //card 2
+                                android:textColor="#000000"
+                                android:id="@+id/isi2"
+                                android:textSize="14dp"
+                                android:layout_below="@+id/judul2"/>
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:text="2."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                android:layout_below="@id/nomer1"
-                                android:id="@+id/angka2"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="15dp"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:gravity="center_vertical"/>
+                                android:layout_height="wrap_content"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp"
+                                android:layout_below="@+id/isi2"/>
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/berita"
+                                android:layout_toRightOf="@+id/judul2"
+                                android:layout_marginLeft="100dp"
+                                />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    //card 3
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:text="3."
+                        android:textColor="@color/background"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/angka3"
+                        android:layout_below="@id/angka2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/card3"
+                        android:layout_toRightOf="@id/angka3"
+                        android:layout_below="@id/card2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="15dp">                                >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
 
-                            <android.support.v7.widget.CardView
+                            <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:id="@+id/card2"
-                                android:layout_below="@id/card1"
-                                android:layout_toRightOf="@+id/angka2"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_height="wrap_content"
+                                android:text="Peristiwa"
+                                android:textSize="20dp"
+                                android:textColor="@color/background"
+                                android:id="@+id/judul3"
+                                />
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                                Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:id="@+id/isi3"
+                                android:textSize="14dp"
+                                android:layout_below="@+id/judul3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp"
+                                android:layout_below="@+id/isi3"/>
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/berita"
+                                android:layout_toRightOf="@+id/judul3"
+                                android:layout_marginLeft="100dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    //card 4
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:text="4."
+                        android:textColor="@color/background"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/angka4"
+                        android:layout_below="@id/angka3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card4"
+                        android:layout_toRightOf="@id/angka4"
+                        android:layout_below="@id/card3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Peristiwa"
+                                android:textSize="20dp"
+                                android:textColor="@color/background"
+                                android:id="@+id/judul4"
+                                />
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                                Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:id="@+id/isi4"
+                                android:textSize="14dp"
+                                android:layout_below="@+id/judul4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp"
+                                android:layout_below="@+id/isi4"/>
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/berita"
+                                android:layout_toRightOf="@+id/judul4"
+                                android:layout_marginLeft="100dp"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    //card 5
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:text="5."
+                        android:textColor="@color/background"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/angka5"
+                        android:layout_below="@id/angka4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/card5"
+                        android:layout_toRightOf="@id/angka5"
+                        android:layout_below="@id/card4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Peristiwa"
+                                android:textSize="20dp"
+                                android:textColor="@color/background"
+                                android:id="@+id/judul5"
+                                />
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                                Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:id="@+id/isi5"
+                                android:textSize="14dp"
+                                android:layout_below="@+id/judul5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp"
+                                android:layout_below="@+id/isi5"/>
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/berita"
+                                android:layout_toRightOf="@+id/judul5"
+                                android:layout_marginLeft="100dp"
+                                />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            //videos
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:textSize="27dp"
+                android:id="@+id/txt_video"
+                android:textColor="#1B1A1A"
+                android:layout_below="@+id/cv_tren"
+                android:layout_margin="15dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="13dp"
+                android:layout_below="@+id/txt_video"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:id="@+id/cv_video">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lainnya"
+                        android:layout_alignParentTop="true"
+                        android:gravity="right"
+                        android:textColor="@color/background"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/lengkap"/>
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lengkap"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
                                 app:cardCornerRadius="15dp">
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="10dp">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        android:id="@+id/judul2"
-                                        />
-                                    <TextView
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
-                                        android:textColor="#000000"
-                                        android:id="@+id/isi2"
-                                        android:textSize="14dp"
-                                        android:layout_below="@+id/judul2"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Rabu, 31 Juli 2019"
-                                        android:textSize="12dp"
-                                        android:layout_below="@+id/isi2"/>
+                                    android:layout_height="wrap_content">
                                     <ImageView
-                                        android:layout_width="300dp"
+                                        android:layout_width="match_parent"
                                         android:layout_height="100dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/judul2"
-                                        android:layout_marginLeft="100dp"
+                                        android:src="@drawable/video"
+                                        android:id="@+id/youtube_player"
                                         />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TimesVlog"
+                                        android:textColor="@color/background"
+                                        android:textSize="20dp"
+                                        android:id="@+id/v_judul"
+                                        android:layout_below="@id/youtube_player"
+                                        android:layout_margin="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yuk Belajar Sejarah Sepuasnya di
+                                        Museum Ganesya Hawai Waterpark"
+                                        android:textSize="14dp"
+                                        android:textColor="#000000"
+                                        android:id="@id/v_isi"
+                                        android:layout_below="@+id/v_judul"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rabu, 31 Juli 2019 - 14:55"
+                                        android:textSize="12dp"
+                                        android:layout_below="@+id/v_isi"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"/>
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
-                            //card 3
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:text="3."
-                                android:textColor="@color/background"
-                                android:textSize="25dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="15dp"
-                                android:id="@+id/angka3"
-                                android:layout_below="@id/angka2"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:gravity="center_vertical"
-                                />
+
+                            //video 2
                             <android.support.v7.widget.CardView
-                                android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:id="@+id/card3"
-                                android:layout_toRightOf="@id/angka3"
-                                android:layout_below="@id/card2"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginRight="10dp"
-                                app:cardCornerRadius="15dp">                                >
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                app:cardCornerRadius="15dp">
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="10dp">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        android:id="@+id/judul3"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/video"
+                                        android:id="@+id/youtube_player2"
                                         />
                                     <TextView
-                                        android:layout_width="250dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
-                                        android:textColor="#000000"
-                                        android:id="@+id/isi3"
-                                        android:textSize="14dp"
-                                        android:layout_below="@+id/judul3"/>
+                                        android:text="TimesVlog"
+                                        android:textColor="@color/background"
+                                        android:textSize="20dp"
+                                        android:id="@+id/v_judul2"
+                                        android:layout_below="@id/youtube_player2"
+                                        android:layout_margin="10dp"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="Yuk Belajar Sejarah Sepuasnya di
+                                        Museum Ganesya Hawai Waterpark"
+                                        android:textSize="14dp"
+                                        android:textColor="#000000"
+                                        android:id="@id/v_isi2"
+                                        android:layout_below="@+id/v_judul2"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rabu, 31 Juli 2019 - 14:55"
                                         android:textSize="12dp"
-                                        android:layout_below="@+id/isi3"/>
-                                    <ImageView
-                                        android:layout_width="300dp"
-                                        android:layout_height="100dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/judul3"
-                                        android:layout_marginLeft="100dp"/>
+                                        android:layout_below="@+id/v_isi2"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"/>
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
-                            //card 4
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:text="4."
-                                android:textColor="@color/background"
-                                android:textSize="25dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="15dp"
-                                android:id="@+id/angka4"
-                                android:layout_below="@id/angka3"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:gravity="center_vertical"
-                                />
+                            //video 3
+
                             <android.support.v7.widget.CardView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                app:cardCornerRadius="15dp">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/video"
+                                        android:id="@+id/youtube_player3"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TimesVlog"
+                                        android:textColor="@color/background"
+                                        android:textSize="20dp"
+                                        android:id="@+id/v_judul3"
+                                        android:layout_below="@id/youtube_player3"
+                                        android:layout_margin="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yuk Belajar Sejarah Sepuasnya di
+                                        Museum Ganesya Hawai Waterpark"
+                                        android:textSize="14dp"
+                                        android:textColor="#000000"
+                                        android:id="@id/v_isi3"
+                                        android:layout_below="@+id/v_judul3"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rabu, 31 Juli 2019 - 14:55"
+                                        android:textSize="12dp"
+                                        android:layout_below="@+id/v_isi3"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"/>
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            //hari ini
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hari Ini"
+                android:layout_below="@+id/cv_video"
+                android:textSize="27dp"
+                android:id="@+id/txt_today"
+                android:textColor="#1B1A1A"
+                android:layout_margin="15dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="13dp"
+                android:layout_below="@id/txt_today"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_today"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/gambar_berita"
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/berita" />
+
+                            <TextView
+                                android:id="@+id/ct_judul1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/card4"
-                                android:layout_toRightOf="@id/angka4"
-                                android:layout_below="@id/card3"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginRight="10dp"
-                                app:cardCornerRadius="15dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="10dp">
+                                android:layout_toRightOf="@+id/gambar_berita"
+                                android:text="Peristiwa"
+                                android:textColor="@color/background"
+                                android:textSize="20dp" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        android:id="@+id/judul4"
-                                        />
-                                    <TextView
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                            <TextView
+                                android:id="@+id/ct_isi1"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_judul1"
+                                android:layout_toRightOf="@id/gambar_berita"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
                                                 Ruang Sekda Jawa Barat"
-                                        android:textColor="#000000"
-                                        android:id="@+id/isi4"
-                                        android:textSize="14dp"
-                                        android:layout_below="@+id/judul4"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Rabu, 31 Juli 2019"
-                                        android:textSize="12dp"
-                                        android:layout_below="@+id/isi4"/>
-                                    <ImageView
-                                        android:layout_width="300dp"
-                                        android:layout_height="100dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/judul4"
-                                        android:layout_marginLeft="100dp"/>
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-                            //card 5
+                                android:textColor="#000000"
+                                android:textSize="14dp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:text="5."
-                                android:textColor="@color/background"
-                                android:textSize="25dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="15dp"
-                                android:id="@+id/angka5"
-                                android:layout_below="@id/angka4"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="10dp"
-                                android:gravity="center_vertical"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:layout_width="wrap_content"
-                                android:layout_height="120dp"
-                                android:id="@+id/card5"
-                                android:layout_toRightOf="@id/angka5"
-                                android:layout_below="@id/card4"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="10dp"
-                                app:cardCornerRadius="15dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="10dp">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        android:id="@+id/judul5"
-                                        />
-                                    <TextView
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
-                                        android:textColor="#000000"
-                                        android:id="@+id/isi5"
-                                        android:textSize="14dp"
-                                        android:layout_below="@+id/judul5"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Rabu, 31 Juli 2019"
-                                        android:textSize="12dp"
-                                        android:layout_below="@+id/isi5"/>
-                                    <ImageView
-                                        android:layout_width="150dp"
-                                        android:layout_height="100dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/judul5"
-                                        android:layout_marginLeft="100dp"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_isi1"
+                                android:layout_toRightOf="@id/gambar_berita"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp" />
 
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
-                </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
 
-    </LinearLayout>
+                    //today 2
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_today2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_below="@id/card_today">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/gambar_berita2"
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/berita" />
+
+                            <TextView
+                                android:id="@+id/ct_judul2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/gambar_berita2"
+                                android:text="Peristiwa"
+                                android:textColor="@color/background"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/ct_isi2"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_judul2"
+                                android:layout_toRightOf="@id/gambar_berita2"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                                Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_isi2"
+                                android:layout_toRightOf="@id/gambar_berita2"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    //today 3
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_today3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/card_today2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/gambar_berita3"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/berita" />
+
+                            <TextView
+                                android:id="@+id/ct_judul3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/gambar_berita3"
+                                android:text="Peristiwa"
+                                android:textColor="@color/background"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/ct_isi3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_judul3"
+                                android:layout_toRightOf="@id/gambar_berita3"
+                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
+                                                Ruang Sekda Jawa Barat"
+                                android:textColor="#000000"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ct_isi3"
+                                android:layout_toRightOf="@id/gambar_berita3"
+                                android:text="Rabu, 31 Juli 2019"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/nav_view"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
