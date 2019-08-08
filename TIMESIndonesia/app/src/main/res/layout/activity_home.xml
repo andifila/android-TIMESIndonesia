@@ -61,7 +61,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:srcCompat="@drawable/ic_menu_white_24dp"
-                            android:backgroundTint="#E90F3B"
+                            android:backgroundTint="@color/headline"
                             android:layout_marginRight="7dp"
                             />
                         <ImageButton
@@ -71,7 +71,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:srcCompat="@drawable/ic_flag_white_24dp"
-                            android:backgroundTint="#F15121"
+                            android:backgroundTint="@color/populer"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"
                             />
@@ -82,7 +82,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"
-                            android:backgroundTint="#F1AC21"
+                            android:backgroundTint="@color/fokus"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"
                             />
@@ -93,7 +93,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:srcCompat="@drawable/ic_photo_library_white_24dp"
-                            android:backgroundTint="#19A7D3"
+                            android:backgroundTint="@color/foto"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"/>
                         <ImageButton
@@ -103,7 +103,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"
-                            android:backgroundTint="#39E61B"
+                            android:backgroundTint="@color/indexs"
                             android:layout_marginLeft="7dp"/>
                     </TableRow>
                     <TableRow
@@ -114,34 +114,34 @@
                         android:gravity="center_horizontal|center_vertical"
                         >
                         <TextView
-                            android:text="Headline"
+                            android:text="@string/headline"
                             android:textColor="#fff"
                             android:layout_gravity="center"
                             android:layout_marginRight="7dp"
                             />
                         <TextView
-                            android:text="Populer"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="Fokus"
+                            android:text="@string/populer"
                             android:textColor="#fff"
                             android:layout_gravity="center"
                             android:layout_marginLeft="7dp"
                             android:layout_marginRight="7dp"
                             />
                         <TextView
-                            android:text="Foto"
+                            android:text="@string/fokus"
                             android:textColor="#fff"
                             android:layout_gravity="center"
                             android:layout_marginLeft="7dp"
                             android:layout_marginRight="7dp"
                             />
                         <TextView
-                            android:text="Indeks"
+                            android:text="@string/foto"
+                            android:textColor="#fff"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            />
+                        <TextView
+                            android:text="@string/indexs"
                             android:textColor="#fff"
                             android:layout_gravity="center"
                             android:layout_marginLeft="7dp"
@@ -159,7 +159,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text="Trending"
+                        android:text="@string/heading"
                         android:textSize="25dp"
                         android:id="@+id/tren"
                         android:textColor="#000000"/>
@@ -206,7 +206,7 @@
                                         android:id="@+id/judul1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
+                                        android:text="@string/judul"
                                         android:textSize="20dp"
                                         android:textColor="@color/background"
                                         />
@@ -215,8 +215,7 @@
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/judul1"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                        android:text="@string/isi"
                                         android:textColor="#000000"
                                         android:textSize="12dp"
                                         />
@@ -224,7 +223,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/isi1"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="@string/tanggal"
                                         android:textSize="8dp"
                                         />
                                     <ImageView
@@ -272,7 +271,7 @@
                                         android:id="@+id/judul2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
+                                        android:text="@string/judul"
                                         android:textSize="20dp"
                                         android:textColor="@color/background"
                                         />
@@ -281,8 +280,7 @@
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/judul2"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                        android:text="@string/isi"
                                         android:textColor="#000000"
                                         android:textSize="12dp"
                                         />
@@ -290,7 +288,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/isi2"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="@string/tanggal"
                                         android:textSize="8dp"
                                         />
                                     <ImageView
@@ -338,7 +336,7 @@
                                         android:id="@+id/judul3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
+                                        android:text="@string/judul"
                                         android:textSize="20dp"
                                         android:textColor="@color/background"
                                         />
@@ -347,8 +345,7 @@
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/judul3"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                        android:text="@string/isi"
                                         android:textColor="#000000"
                                         android:textSize="12dp"
                                         />
@@ -356,7 +353,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/isi3"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="@string/tanggal"
                                         android:textSize="8dp"
                                         />
                                     <ImageView
@@ -404,7 +401,7 @@
                                         android:id="@+id/judul4"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
+                                        android:text="@string/judul"
                                         android:textSize="20dp"
                                         android:textColor="@color/background"
                                         />
@@ -413,8 +410,7 @@
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/judul4"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                        android:text="@string/isi"
                                         android:textColor="#000000"
                                         android:textSize="12dp"
                                         />
@@ -422,7 +418,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/isi4"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="@string/tanggal"
                                         android:textSize="8dp"
                                         />
                                     <ImageView
@@ -469,7 +465,7 @@
                                         android:id="@+id/judul5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Peristiwa"
+                                        android:text="@string/judul"
                                         android:textSize="20dp"
                                         android:textColor="@color/background"
                                         />
@@ -478,8 +474,7 @@
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/judul5"
-                                        android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                        android:text="@string/isi"
                                         android:textColor="#000000"
                                         android:textSize="12dp"
                                         />
@@ -487,7 +482,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/isi5"
-                                        android:text="Rabu, 31 Juli 2019"
+                                        android:text="@string/tanggal"
                                         android:textSize="8dp"
                                         />
                                     <ImageView
