@@ -8,4 +8,15 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="headline">Headline</string>
+    <string name="populer">Populer</string>
+    <string name="fokus">Fokus</string>
+    <string name="foto">Foto</string>
+    <string name="indexs">Indexs</string>
+
+    <string name="heading">Trending</string>
+    <string name="judul">Peristiwa</string>
+    <string name="isi">Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</string>
+    <string name="tanggal">Rabu, 31 Juli 2019</string>
 </resources>
