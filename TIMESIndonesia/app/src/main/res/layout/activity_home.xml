@@ -29,7 +29,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_toRightOf="@id/top"
-                    android:src="@drawable/ic_more_vert_white_24dp"
+                    app:srcCompat="@drawable/ic_more_vert_white_24dp"
                     android:layout_centerInParent="true"
                     />
         </RelativeLayout>
@@ -59,7 +59,7 @@
                             android:id="@+id/btnHeadline"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/threelines"
+                            app:srcCompat="@drawable/ic_menu_white_24dp"
                             android:backgroundTint="#E90F3B"
                             android:layout_marginRight="7dp"
                             />
@@ -69,7 +69,7 @@
                             android:id="@+id/btnPopuler"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/trending"
+                            app:srcCompat="@drawable/ic_flag_white_24dp"
                             android:backgroundTint="#F15121"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"
@@ -80,7 +80,7 @@
                             android:id="@+id/btnFokus"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/focus"
+                            app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"
                             android:backgroundTint="#F1AC21"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"
@@ -91,7 +91,7 @@
                             android:id="@+id/btnFoto"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/gallery"
+                            app:srcCompat="@drawable/ic_photo_library_white_24dp"
                             android:backgroundTint="#19A7D3"
                             android:layout_marginRight="7dp"
                             android:layout_marginLeft="7dp"/>
@@ -101,7 +101,7 @@
                             android:id="@+id/btnIndeks"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/index"
+                            app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"
                             android:backgroundTint="#39E61B"
                             android:layout_marginLeft="7dp"/>
                     </TableRow>
