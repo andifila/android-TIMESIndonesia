@@ -4,4 +4,16 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_left_margin">60dp</dimen>
     <dimen name="activity_right_margin">60dp</dimen>
+
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+    <dimen name="size_heading">32sp</dimen>
+    <dimen name="size_nomer">30sp</dimen>
+    <dimen name="size_judul">20sp</dimen>
+    <dimen name="size_isi">14sp</dimen>
+    <dimen name="size_tgl">12sp</dimen>
+
 </resources>

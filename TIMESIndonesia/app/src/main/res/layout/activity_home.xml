@@ -1,52 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    //logo atas
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/background"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/background"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            android:id="@+id/logo"
-            >
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:src="@drawable/img_logo"
-                android:layout_centerInParent="true"
-                android:id="@+id/top"
-                />
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_toRightOf="@id/top"
-                    app:srcCompat="@drawable/ic_more_vert_white_24dp"
-                    android:layout_centerInParent="true"
-                    />
-        </RelativeLayout>
-        <ScrollView
+        android:id="@+id/logo"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_logo"
+            android:layout_centerInParent="true"
+            android:id="@+id/top"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/top"
+            app:srcCompat="@drawable/ic_more_vert_white_24dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/konten"
+        android:layout_weight="1.0">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp">
-            <LinearLayout
+            android:orientation="vertical">
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TableLayout
-                    android:id="@+id/table"
+                android:layout_height="80dp"
+                android:background="@color/background"
+                >
+                <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="18dp"
@@ -61,7 +55,7 @@
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/ic_menu_white_24dp"
                         android:backgroundTint="#E90F3B"
-                        android:layout_marginRight="7dp"
+                        android:layout_marginEnd="7dp"
                         />
                     <ImageButton
                         android:layout_gravity="center"
@@ -91,7 +85,7 @@
                         android:id="@+id/btnFoto"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/gallery"
+                        app:srcCompat="@drawable/ic_photo_library_white_24dp"
                         android:backgroundTint="#19A7D3"
                         android:layout_marginRight="7dp"
                         android:layout_marginLeft="7dp"/>
@@ -101,9 +95,9 @@
                         android:id="@+id/btnIndeks"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/index"
+                        app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"
                         android:backgroundTint="#39E61B"
-                        android:layout_marginLeft="7dp"/>
+                        android:layout_marginStart="7dp"/>
                 </TableRow>
                 <TableRow
                     android:layout_width="match_parent"
@@ -112,569 +106,702 @@
                     android:layout_marginRight="18dp"
                     android:gravity="center_horizontal|center_vertical"
                     >
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginRight="18dp"
-                        android:gravity="center_horizontal|center_vertical">
-
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnHeadline"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_menu_white_24dp"
-                            android:backgroundTint="@color/headline"
-                            android:layout_marginRight="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnPopuler"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_flag_white_24dp"
-                            android:backgroundTint="@color/populer"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnFokus"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"
-                            android:backgroundTint="@color/fokus"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"
-                            />
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnFoto"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_photo_library_white_24dp"
-                            android:backgroundTint="@color/foto"
-                            android:layout_marginRight="7dp"
-                            android:layout_marginLeft="7dp"/>
-                        <ImageButton
-                            android:layout_gravity="center"
-                            android:background="@drawable/button_bunder"
-                            android:id="@+id/btnIndeks"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"
-                            android:backgroundTint="@color/indexs"
-                            android:layout_marginLeft="7dp"/>
-                    </TableRow>
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:id="@+id/card1"
-                        android:layout_toRightOf="@id/nomer1"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginRight="10dp"
-                        app:cardCornerRadius="15dp"
-                        >
-                        <TextView
-                            android:text="@string/headline"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="@string/populer"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="@string/fokus"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="@string/foto"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginRight="7dp"
-                            />
-                        <TextView
-                            android:text="@string/indexs"
-                            android:textColor="#fff"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="7dp"
-                            />
-                    </TableRow>
-                </TableLayout>
-                <LinearLayout
-                    android:layout_below="@+id/table"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="10dp"
-                    android:padding="15dp">
                     <TextView
+                        android:text="@string/headline"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="7dp"
+                        />
+                    <TextView
+                        android:text="@string/populer"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="@string/fokus"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="@string/foto"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <TextView
+                        android:text="@string/indexs"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="7dp"
+                        />
+                </TableRow>
+            </TableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heading"
+                    android:textSize="32sp"
+                    android:id="@+id/tren"
+                    android:textColor="#1B1A1A"
+                    android:layout_margin="20dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    >
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:text="@string/heading"
-                        android:textSize="25dp"
-                        android:id="@+id/tren"
-                        android:textColor="#000000"/>
-                    <android.support.v7.widget.CardView
-                        android:layout_below="@+id/tren"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        app:cardCornerRadius="15dp"
+                        android:layout_gravity="center_horizontal"
                         >
-                        <RelativeLayout
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:text="1."
+                            android:textColor="@color/background"
+                            android:textSize="@dimen/size_nomer"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginEnd="@dimen/margin_15"
+                            android:id="@+id/nomer1"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:gravity="center_vertical"/>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/card1"
+                            android:layout_toEndOf="@id/nomer1"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            app:cardCornerRadius="15dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/judul"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/judul1"
+                                    />
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/isi1"
+                                    android:textSize="@dimen/size_isi"
+                                    android:layout_below="@+id/judul1"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/isi1"/>
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/berita"
+                                    android:layout_toEndOf="@id/judul1"
+                                    android:layout_marginStart="100dp"/>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        //card 2
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:text="2."
+                            android:textSize="@dimen/size_nomer"
+                            android:textColor="@color/background"
+                            android:layout_below="@id/nomer1"
+                            android:id="@+id/angka2"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginEnd="@dimen/margin_15"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:gravity="center_vertical"/>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/card2"
+                            android:layout_below="@id/card1"
+                            android:layout_toEndOf="@+id/angka2"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            app:cardCornerRadius="15dp">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/judul"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/judul2"
+                                    />
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/isi2"
+                                    android:textSize="@dimen/size_isi"
+                                    android:layout_below="@+id/judul2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/isi2"/>
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/berita"
+                                    android:layout_toEndOf="@id/judul2"
+                                    android:layout_marginStart="100dp"
+                                    />
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        //card 3
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:text="3."
+                            android:textColor="@color/background"
+                            android:textSize="@dimen/size_nomer"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginEnd="@dimen/margin_15"
+                            android:id="@+id/angka3"
+                            android:layout_below="@id/angka2"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:gravity="center_vertical"
+                            />
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/card3"
+                            android:layout_toEndOf="@id/angka3"
+                            android:layout_below="@id/card2"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            app:cardCornerRadius="@dimen/margin_15">                                >
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/judul"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/judul3"
+                                    />
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/isi3"
+                                    android:textSize="@dimen/size_isi"
+                                    android:layout_below="@+id/judul3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/isi3"/>
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/berita"
+                                    android:layout_toEndOf="@id/judul3"
+                                    android:layout_marginStart="100dp"
+                                    />
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        //card 4
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:text="4."
+                            android:textColor="@color/background"
+                            android:textSize="25dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:id="@+id/angka4"
+                            android:layout_below="@id/angka3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            />
+                        <android.support.v7.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/card4"
+                            android:layout_toEndOf="@id/angka4"
+                            android:layout_below="@id/card3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="10dp"
+                            app:cardCornerRadius="15dp"
                             >
-                            <TextView
-                                android:id="@+id/nomer1"
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center_vertical"
-                                android:text="1."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/card1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_toRightOf="@id/nomer1"
-                                app:cardCornerRadius="5dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    >
-                                    <TextView
-                                        android:id="@+id/judul1"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/judul"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        />
-                                    <TextView
-                                        android:id="@+id/isi1"
-                                        android:layout_width="170dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/judul1"
-                                        android:text="@string/isi"
-                                        android:textColor="#000000"
-                                        android:textSize="12dp"
-                                        />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/isi1"
-                                        android:text="@string/tanggal"
-                                        android:textSize="8dp"
-                                        />
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:layout_toRightOf="@+id/isi1"
-                                        android:src="@drawable/berita"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
 
-                            //CARD 2
-                            <TextView
-                                android:id="@+id/nomer2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="15dp"
-                                android:gravity="center_vertical"
-                                android:text="2."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                android:layout_below="@id/nomer1"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/card2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_toRightOf="@id/nomer1"
-                                app:cardCornerRadius="5dp"
-                                android:layout_below="@id/card1"
-                                >
-                                <RelativeLayout
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    >
-                                    <TextView
-                                        android:id="@+id/judul2"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/judul"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        />
-                                    <TextView
-                                        android:id="@+id/isi2"
-                                        android:layout_width="170dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/judul2"
-                                        android:text="@string/isi"
-                                        android:textColor="#000000"
-                                        android:textSize="12dp"
-                                        />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/isi2"
-                                        android:text="@string/tanggal"
-                                        android:textSize="8dp"
-                                        />
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/isi2"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
+                                    android:text="@string/judul"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/judul4"
+                                    />
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/isi4"
+                                    android:textSize="@dimen/size_isi"
+                                    android:layout_below="@+id/judul4"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/isi4"/>
+                                <ImageView
+                                    android:layout_width="300dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/berita"
+                                    android:layout_toEndOf="@+id/judul4"
+                                    android:layout_marginStart="100dp"/>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                        //card 5
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:text="5."
+                            android:textColor="@color/background"
+                            android:textSize="@dimen/size_nomer"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:id="@+id/angka5"
+                            android:layout_below="@id/angka4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_vertical"
+                            />
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:id="@+id/card5"
+                            android:layout_toEndOf="@id/angka5"
+                            android:layout_below="@id/card4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:cardCornerRadius="15dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
 
-                            //CARD 3
-                            <TextView
-                                android:id="@+id/nomer3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="15dp"
-                                android:gravity="center_vertical"
-                                android:text="3."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                android:layout_below="@id/nomer2"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/card3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_toRightOf="@id/nomer1"
-                                app:cardCornerRadius="5dp"
-                                android:layout_below="@id/card2"
-                                >                             >
-                                <RelativeLayout
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    >
-                                    <TextView
-                                        android:id="@+id/judul3"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/judul"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        />
-                                    <TextView
-                                        android:id="@+id/isi3"
-                                        android:layout_width="170dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/judul3"
-                                        android:text="@string/isi"
-                                        android:textColor="#000000"
-                                        android:textSize="12dp"
-                                        />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/isi3"
-                                        android:text="@string/tanggal"
-                                        android:textSize="8dp"
-                                        />
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/isi3"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
+                                    android:text="@string/judul"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/judul5"
+                                    />
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/isi5"
+                                    android:textSize="@dimen/size_isi"
+                                    android:layout_below="@+id/judul5"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/isi5"/>
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/berita"
+                                    android:layout_toEndOf="@+id/judul5"
+                                    android:layout_marginStart="100dp"
+                                    />
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
 
-                            //CARD 4
-                            <TextView
-                                android:id="@+id/nomer4"
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            //video
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:layout_margin="20dp"
+                android:textSize="@dimen/size_heading"
+                android:textColor="#000000"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="13dp"
+                android:layout_gravity="center_horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lainnya"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/size_isi"
+                    android:id="@+id/lain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/margin_10"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lain">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        //video 1
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_10"
+                            app:cardCornerRadius="15dp">
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="15dp"
-                                android:gravity="center_vertical"
-                                android:text="4."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                android:layout_below="@id/nomer3"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/card4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_toRightOf="@id/nomer1"
-                                app:cardCornerRadius="5dp"
-                                android:layout_below="@id/card3"
-                                >
-                                <RelativeLayout
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin_5"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10">
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/video"
+                                    android:id="@+id/img_berita"/>
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    >
-                                    <TextView
-                                        android:id="@+id/judul4"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/judul"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        />
-                                    <TextView
-                                        android:id="@+id/isi4"
-                                        android:layout_width="170dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/judul4"
-                                        android:text="@string/isi"
-                                        android:textColor="#000000"
-                                        android:textSize="12dp"
-                                        />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/isi4"
-                                        android:text="@string/tanggal"
-                                        android:textSize="8dp"
-                                        />
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/isi4"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-                        </LinearLayout>
-                    </HorizontalScrollView>
+                                    android:text="@string/judul2"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/vd_judul"
+                                    android:layout_below="@id/img_berita"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi2"
+                                    android:textSize="@dimen/size_isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/vd_isi"
+                                    android:layout_below="@+id/vd_judul"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/vd_isi"/>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                        //video 2
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            app:cardCornerRadius="15dp">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin_10"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10">
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/video"
+                                    android:id="@+id/img_berita2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/judul2"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/vd_judul2"
+                                    android:layout_below="@id/img_berita2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi2"
+                                    android:textSize="@dimen/size_isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/vd_isi2"
+                                    android:layout_below="@+id/vd_judul2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/vd_isi2"/>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                        //video 3
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_10"
+                            app:cardCornerRadius="15dp">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin_10"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_10">
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/video"
+                                    android:id="@+id/img_berita3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/judul2"
+                                    android:textSize="@dimen/size_judul"
+                                    android:textColor="@color/background"
+                                    android:id="@+id/vd_judul3"
+                                    android:layout_below="@+id/img_berita3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/isi2"
+                                    android:textSize="@dimen/size_isi"
+                                    android:textColor="#000000"
+                                    android:id="@+id/vd_isi3"
+                                    android:layout_below="@+id/vd_judul3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tanggal"
+                                    android:textSize="@dimen/size_tgl"
+                                    android:layout_below="@+id/vd_isi3"/>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
             //hari ini
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari Ini"
-                android:layout_below="@+id/cv_video"
-                android:textSize="27dp"
-                android:id="@+id/txt_today"
-                android:textColor="#1B1A1A"
-                android:layout_margin="15dp"/>
+                android:layout_height="wrap_content" 
+                android:layout_margin="@dimen/margin_15"
+                android:textSize="@dimen/size_heading"
+                android:text="@string/heading3"
+                android:textColor="#000000"/>
             <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
                 app:cardCornerRadius="13dp"
-                android:layout_below="@id/txt_today"
-                android:layout_marginBottom="100dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                >
-
+                android:layout_gravity="center_horizontal">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
+                    //today 1
                     <android.support.v7.widget.CardView
-                        android:id="@+id/card_today"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:id="@id/card_td_1"
                         app:cardCornerRadius="15dp">
-
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp">
-
+                            android:layout_margin="@dimen/margin_10">
                             <ImageView
-                                android:id="@+id/gambar_berita"
-                                android:layout_width="200dp"
-                                android:layout_height="100dp"
-                                android:layout_alignParentStart="true"
-                                android:src="@drawable/berita" />
-
-                            <TextView
-                                android:id="@+id/nomer5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="15dp"
-                                android:gravity="center_vertical"
-                                android:text="5."
-                                android:textSize="25dp"
-                                android:textColor="@color/background"
-                                android:layout_below="@id/nomer4"
-                                />
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/card5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="100dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_toRightOf="@id/nomer1"
-                                app:cardCornerRadius="5dp"
-                                android:layout_below="@id/card4"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="5dp"
-                                    >
-                                    <TextView
-                                        android:id="@+id/judul5"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/judul"
-                                        android:textSize="20dp"
-                                        android:textColor="@color/background"
-                                        />
-                                    <TextView
-                                        android:id="@+id/isi5"
-                                        android:layout_width="170dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/judul5"
-                                        android:text="@string/isi"
-                                        android:textColor="#000000"
-                                        android:textSize="12dp"
-                                        />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/isi5"
-                                        android:text="@string/tanggal"
-                                        android:textSize="8dp"
-                                        />
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/berita"
-                                        android:layout_toRightOf="@+id/isi5"
-                                        />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-                        </RelativeLayout>
-
-                    </android.support.v7.widget.CardView>
-                    //today 3
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/card_today3"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        app:cardCornerRadius="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_below="@id/card_today2">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp">
-
-                            <ImageView
-                                android:id="@+id/gambar_berita3"
                                 android:layout_width="100dp"
                                 android:layout_height="50dp"
-                                android:layout_alignParentStart="true"
-                                android:src="@drawable/berita" />
-
+                                android:src="@drawable/berita"
+                                android:id="@+id/img_today1"
+                                android:layout_alignParentStart="true"/>
                             <TextView
-                                android:id="@+id/ct_judul3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@+id/gambar_berita3"
-                                android:text="Peristiwa"
+                                android:text="@string/judul"
+                                android:textSize="@dimen/size_judul"
                                 android:textColor="@color/background"
-                                android:textSize="20dp" />
-
+                                android:id="@+id/td_judul"
+                                android:layout_toEndOf="@+id/img_today1"/>
                             <TextView
-                                android:id="@+id/ct_isi3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/ct_judul3"
-                                android:layout_toRightOf="@id/gambar_berita3"
-                                android:text="Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah
-                                                Ruang Sekda Jawa Barat"
+                                android:text="@string/isi"
+                                android:textSize="@dimen/size_isi"
                                 android:textColor="#000000"
-                                android:textSize="14dp" />
-
+                                android:layout_below="@+id/td_judul"
+                                android:layout_toEndOf="@+id/img_today1"
+                                android:id="@+id/td_isi"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/ct_isi3"
-                                android:layout_toRightOf="@id/gambar_berita3"
-                                android:text="Rabu, 31 Juli 2019"
-                                android:textSize="12dp" />
-
+                                android:text="@string/tanggal"
+                                android:textSize="@dimen/size_tgl"
+                                android:layout_below="@+id/td_isi"
+                                android:layout_toEndOf="@+id/img_today1"/>
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
+                    //today 2
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_below="@+id/card_td_1"
+                        android:id="@+id/card_td_2"
+                        app:cardCornerRadius="15dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_10">
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/berita"
+                                android:id="@+id/img_today2"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/judul"
+                                android:textSize="@dimen/size_judul"
+                                android:textColor="@color/background"
+                                android:id="@+id/td_judul2"
+                                android:layout_toEndOf="@+id/img_today2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/isi"
+                                android:textSize="@dimen/size_isi"
+                                android:textColor="#000000"
+                                android:layout_below="@+id/td_judul2"
+                                android:layout_toEndOf="@+id/img_today2"
+                                android:id="@+id/td_isi2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tanggal"
+                                android:textSize="@dimen/size_tgl"
+                                android:layout_below="@+id/td_isi2"
+                                android:layout_toEndOf="@+id/img_today2"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    //today 3
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_below="@+id/card_td_2"
+                        android:id="@+id/card_td_3"
+                        app:cardCornerRadius="15dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_10">
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/berita"
+                                android:id="@+id/img_today3"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/judul"
+                                android:textSize="@dimen/size_judul"
+                                android:textColor="@color/background"
+                                android:id="@+id/td_judul3"
+                                android:layout_toEndOf="@+id/img_today3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/isi"
+                                android:textSize="@dimen/size_isi"
+                                android:textColor="#000000"
+                                android:layout_below="@+id/td_judul3"
+                                android:layout_toEndOf="@+id/img_today3"
+                                android:id="@+id/td_isi3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tanggal"
+                                android:textSize="@dimen/size_tgl"
+                                android:layout_below="@+id/td_isi3"
+                                android:layout_toEndOf="@+id/img_today3"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
-
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
     <android.support.design.widget.BottomNavigationView
@@ -684,8 +811,6 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:background="?android:attr/windowBackground"
-        android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu"
-        />
-
-</RelativeLayout>
+       />
+</LinearLayout>
