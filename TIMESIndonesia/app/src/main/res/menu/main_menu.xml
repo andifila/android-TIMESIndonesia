@@ -4,9 +4,9 @@
     <item
         android:id="@+id/action_list"
         android:title="Favorit"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_grid"
-        android:title="Peengatura"
+        android:title="Pengaturan"
         app:showAsAction="never"/>
 </menu>

@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.navigation_cari:
                             selectedFragment = new CariActivity();
                             break;
+                        case R.id.navigation_video:
+                            selectedFragment = new VideoActivity();
+                            break;
                         default:
                             selectedFragment = new HomeActivity();
 

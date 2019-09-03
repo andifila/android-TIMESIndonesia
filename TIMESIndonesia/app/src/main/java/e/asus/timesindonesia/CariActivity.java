@@ -2,17 +2,21 @@ package e.asus.timesindonesia;
 
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -28,6 +32,9 @@ public class CariActivity extends Fragment {
     private ArrayList<pencarian> list = new ArrayList<>();
     View view;
     EditText et_cari;
+    Toolbar toolbar;
+    LinearLayout set, fav;
+    BottomSheetDialog bottomSheetDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -74,6 +81,21 @@ public class CariActivity extends Fragment {
             }
         });
 
+        toolbar = view.findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.custom_option_menu);
+        createBottomSheetDialog();
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.option:
+                        bottomSheetDialog.show();
+                        break;
+                }
+                return false;
+            }
+        });
+
         return view;
     }
 
@@ -83,4 +105,17 @@ public class CariActivity extends Fragment {
         rvNews.setAdapter(cardViewHeroAdapter);
     }
 
+    private void createBottomSheetDialog(){
+        if(bottomSheetDialog==null){
+            View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
+            set = view.findViewById(R.id.setting);
+            fav = view.findViewById(R.id.fav);
+
+            //set.setOnClickListener(getActivity());
+            //fav.setOnClickListener(this);
+            //relativeLayout.setOnClickListener(this);
+            bottomSheetDialog = new BottomSheetDialog(getActivity());
+            bottomSheetDialog.setContentView(view);
+        }
+    }
 }
