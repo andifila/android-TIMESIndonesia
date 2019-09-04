@@ -103,10 +103,14 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.fav:
+                Intent i = new Intent(getActivity(),FavoritActivity.class);
+                startActivity(i);
                 Toast.makeText(getActivity(),"Fav Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;
             case R.id.setting:
+                Intent j = new Intent(getActivity(),SettingActivity.class);
+                startActivity(j);
                 Toast.makeText(getActivity(),"Setting Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;

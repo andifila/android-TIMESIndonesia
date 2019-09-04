@@ -16,5 +16,6 @@
     <dimen name="size_judul">20sp</dimen>
     <dimen name="size_isi">14sp</dimen>
     <dimen name="size_tgl">12sp</dimen>
+    <dimen name="size_pengaturan">16sp</dimen>
 
 </resources>
