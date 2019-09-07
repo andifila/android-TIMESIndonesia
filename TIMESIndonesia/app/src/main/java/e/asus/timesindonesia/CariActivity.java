@@ -95,10 +95,8 @@ public class CariActivity extends Fragment {
                 return false;
             }
         });
-
         return view;
     }
-
     private void showRecyclerCardView(){
         rvNews.setLayoutManager(new LinearLayoutManager(getActivity()));
         CardViewNewsAdapter cardViewHeroAdapter = new CardViewNewsAdapter(list);
@@ -110,7 +108,6 @@ public class CariActivity extends Fragment {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);
-
             //set.setOnClickListener(getActivity());
             //fav.setOnClickListener(this);
             //relativeLayout.setOnClickListener(this);

@@ -9,15 +9,11 @@
     <!--<include-->
         <!--android:id="@+id/toolbar"-->
         <!--layout="@layout/custom_toolbar"/>-->
-
         <FrameLayout
             android:id="@+id/framelayout"
             android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </FrameLayout>
-
-
+            android:layout_height="wrap_content" />
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigasi"
         android:background="?android:attr/windowBackground"
@@ -25,7 +21,5 @@
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-    </android.support.design.widget.BottomNavigationView>
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

@@ -33,7 +33,6 @@ public class VideoActivity extends Fragment {
         rvVideo.setHasFixedSize(true);
 
         arrayList = new ArrayList<video>();
-
         video vd = new video("https:/www.youtube.com/embed/4104WZ7TRTY");
         arrayList.add(vd);
         vd = new video("https:/www.youtube.com/embed/2mAy6B6iXEc");
@@ -70,7 +69,6 @@ public class VideoActivity extends Fragment {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);
-
             //set.setOnClickListener(getActivity());
             //fav.setOnClickListener(this);
             //relativeLayout.setOnClickListener(this);

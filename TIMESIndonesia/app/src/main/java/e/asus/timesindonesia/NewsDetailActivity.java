@@ -29,7 +29,6 @@ public class NewsDetailActivity extends AppCompatActivity {
         rvBerita.setHasFixedSize(true);
         list.addAll(pencarianData.getListData());
         showRecyclerCardView();
-
     }
 
     private void showRecyclerCardView(){

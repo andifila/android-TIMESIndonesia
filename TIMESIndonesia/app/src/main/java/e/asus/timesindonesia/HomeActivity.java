@@ -80,9 +80,7 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
                 Intent newsdetail = new Intent(getActivity(), NewsDetailActivity.class);
                 startActivity(newsdetail);
         }});
-
         return view;
-
     }
 
     private void createBottomSheetDialog(){
@@ -105,18 +103,17 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
             case R.id.fav:
                 Intent i = new Intent(getActivity(),FavoritActivity.class);
                 startActivity(i);
-                Toast.makeText(getActivity(),"Fav Click", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),"Fav Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;
             case R.id.setting:
                 Intent j = new Intent(getActivity(),SettingActivity.class);
                 startActivity(j);
-                Toast.makeText(getActivity(),"Setting Click", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),"Setting Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;
         }
     }
-
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.main_menu, menu);

@@ -16,5 +16,4 @@ public class KanalActivity extends Fragment {
         view = inflater.inflate(R.layout.activity_kanal, container, false);
         return view;
     }
-
 }

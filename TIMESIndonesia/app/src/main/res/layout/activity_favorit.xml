@@ -12,14 +12,20 @@
         android:layout_height="60dp"
         android:background="#fff"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Favorit"
-        />
+        app:title="Favorit" />
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_18">
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_15"
-        android:layout_marginEnd="@dimen/margin_15"
-        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_12"
         android:id="@+id/rv_fav"/>
-
+    </android.support.v7.widget.CardView>
 </LinearLayout>

@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         default:
                             selectedFragment = new HomeActivity();
-
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, selectedFragment).commit();
                     return true;
