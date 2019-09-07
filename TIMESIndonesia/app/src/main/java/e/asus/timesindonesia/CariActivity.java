@@ -46,11 +46,11 @@ public class CariActivity extends Fragment {
 
         final ListView listView = view.findViewById(R.id.txt_list_pencarian);
         final ArrayList<String> names = new ArrayList<>();
-        names.add("Kamu");
-        names.add("dan");
-        names.add("Aku");
-        names.add("bersama");
-        names.add("dia");
+        names.add("KKN Desa Penari");
+        names.add("Livi Zheng");
+        names.add("Gundala");
+        names.add("Ponsel BM Bakal diblokir");
+        names.add("Pasar Smartphone 2019");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1,names);
         listView.setAdapter(adapter);
 

@@ -48,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_24"
-            android:layout_marginLeft="@dimen/margin_24">
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,5 +104,4 @@
             </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
     </ScrollView>
-
 </RelativeLayout>

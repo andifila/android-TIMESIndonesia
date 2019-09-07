@@ -13,7 +13,9 @@
             android:id="@+id/framelayout"
             android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_above="@id/navigasi"
+            android:layout_alignParentTop="true"/>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigasi"
         android:background="?android:attr/windowBackground"
