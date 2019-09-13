@@ -86,6 +86,7 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     private void createBottomSheetDialog(){
         if(bottomSheetDialog==null){
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
+            view.setBackgroundResource(R.drawable.layout_melengkung);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);
 

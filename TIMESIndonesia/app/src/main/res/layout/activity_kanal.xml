@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1">
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#252323">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -14,7 +15,176 @@
         android:background="@color/background"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Kanal Terbaru"
+        app:title="KANAL"
         android:gravity="center"
         />
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/layout_peristiwa">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/peristiwa"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PERISTIWA"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/layout_peristiwa"
+            android:id="@+id/layout_politik">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/politik"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="POLITIK"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/layout_politik"
+            android:id="@+id/layout_ekonomi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ekonomi"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="EKONOMI"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/layout_peristiwa"
+            android:id="@+id/layout_gaya_hidup">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/gayahidup"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="GAYA HIDUP"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/layout_gaya_hidup"
+            android:layout_below="@id/layout_politik"
+            android:id="@+id/layout_olahraga">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/olahraga"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OLAHRAGA"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/layout_olahraga"
+            android:layout_below="@id/layout_ekonomi"
+            android:id="@+id/layout_pendidikan">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/pendidikan"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PENDIDIKAN"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/layout_gaya_hidup"
+            android:id="@+id/layout_ketahanan_informasi">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/teknologi"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="KETAHANAN INFORMASI"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/layout_ketahanan_informasi"
+            android:layout_below="@id/layout_olahraga"
+            android:id="@+id/layout_more">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/wisata"
+                android:scaleType="centerCrop"
+                android:alpha=".51"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MORE"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_more_vert_white_24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="#00FFFFFF"
+                android:id="@+id/btn_more"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

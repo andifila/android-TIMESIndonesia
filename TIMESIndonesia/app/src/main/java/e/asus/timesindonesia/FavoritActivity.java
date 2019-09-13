@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import e.asus.timesindonesia.adapter.CardViewFavAdapter;
 import e.asus.timesindonesia.adapter.CardViewNewsAdapter;
 import e.asus.timesindonesia.model.pencarian;
 import e.asus.timesindonesia.model.pencarianData;
@@ -28,7 +29,7 @@ public class FavoritActivity extends AppCompatActivity {
     }
     private void showRecyclerCardView(){
         rvNews.setLayoutManager(new LinearLayoutManager(this));
-        CardViewNewsAdapter cardViewHeroAdapter = new CardViewNewsAdapter(list);
+        CardViewFavAdapter cardViewHeroAdapter = new CardViewFavAdapter(list);
         rvNews.setAdapter(cardViewHeroAdapter);
     }
 }
