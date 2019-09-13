@@ -52,7 +52,6 @@ public class CardViewFavAdapter extends RecyclerView.Adapter<CardViewFavAdapter.
             tvKategori = itemView.findViewById(R.id.tv_item_name);
             tvJudul = itemView.findViewById(R.id.tv_item_judul);
             tvTgl = itemView.findViewById(R.id.tv_item_tgl);
-
         }
     }
 }

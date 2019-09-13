@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.navigasi);
         btn.setOnNavigationItemSelectedListener(navListener);
     }
+
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

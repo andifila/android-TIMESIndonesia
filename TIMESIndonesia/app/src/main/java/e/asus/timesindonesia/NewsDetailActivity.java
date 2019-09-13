@@ -37,9 +37,4 @@ public class NewsDetailActivity extends AppCompatActivity {
         CardViewNewsAdapter cardViewHeroAdapter = new CardViewNewsAdapter(list);
         rvBerita.setAdapter(cardViewHeroAdapter);
     }
-//    @Override
-//    public boolean onNavigateUp(){
-//        finish();
-//        return true;
-//    }
 }

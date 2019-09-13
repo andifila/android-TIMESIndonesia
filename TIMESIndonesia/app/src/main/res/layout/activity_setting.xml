@@ -10,11 +10,9 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_50"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:titleTextColor="@color/white"
-        app:title="Pengaturan" />
+        app:titleTextColor="@color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/notif"
-                android:textSize="@dimen/size_14"/>
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/black"/>
             <Switch
                 android:id="@+id/switch_push"
                 android:layout_width="wrap_content"
@@ -44,25 +43,29 @@
             android:layout_height="wrap_content"
             android:text="@string/share"
             android:textSize="@dimen/size_14"
-            android:layout_marginBottom="@dimen/margin_28"/>
+            android:layout_marginBottom="@dimen/margin_28"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rate"
             android:layout_marginBottom="@dimen/margin_28"
-            android:textSize="@dimen/size_14"/>
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fb"
             android:layout_marginBottom="@dimen/margin_28"
-            android:textSize="@dimen/size_14"/>
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/twit"
             android:textSize="@dimen/size_14"
-            android:layout_marginBottom="@dimen/margin_14"/>
+            android:layout_marginBottom="@dimen/margin_14"
+            android:textColor="@color/black"/>
         <View
             android:id="@+id/garis"
             android:layout_width="match_parent"
@@ -74,12 +77,14 @@
             android:layout_height="wrap_content"
             android:text="@string/pp"
             android:textSize="@dimen/size_14"
-            android:layout_marginBottom="@dimen/margin_28"/>
+            android:layout_marginBottom="@dimen/margin_28"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/about"
-            android:textSize="@dimen/size_14" />
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
 </LinearLayout>

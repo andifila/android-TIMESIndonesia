@@ -39,25 +39,6 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     RelativeLayout relativeLayout;
     LinearLayout set, fav;
     BottomSheetDialog bottomSheetDialog;
-
-    //@Override
-    //protected void onCreate(Bundle savedInstanceState) {
-    //  super.onCreate(savedInstanceState);
-    //setContentView(R.layout.activity_home);
-//        BottomNavigationView navView = findViewById(R.id.nav_view);
-//        mTextMessage = findViewById(R.id.message);
-//        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-//
-//        card1 = findViewById(R.id.card1);
-//        card1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent newsdetail = new Intent(HomeActivity.this, NewsDetailActivity.class);
-//                startActivity(newsdetail);
-    //}
-    //  });
-
-
     View view;
 
     @Override
@@ -89,10 +70,8 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
             view.setBackgroundResource(R.drawable.layout_melengkung);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);
-
             set.setOnClickListener(this);
             fav.setOnClickListener(this);
-            //relativeLayout.setOnClickListener(this);
             bottomSheetDialog = new BottomSheetDialog(getActivity());
             bottomSheetDialog.setContentView(view);
         }
@@ -104,20 +83,13 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
             case R.id.fav:
                 Intent i = new Intent(getActivity(),FavoritActivity.class);
                 startActivity(i);
-                //Toast.makeText(getActivity(),"Fav Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;
             case R.id.setting:
                 Intent j = new Intent(getActivity(),SettingActivity.class);
                 startActivity(j);
-                //Toast.makeText(getActivity(),"Setting Click", Toast.LENGTH_SHORT).show();
                 bottomSheetDialog.dismiss();
                 break;
         }
     }
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.main_menu, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
 }

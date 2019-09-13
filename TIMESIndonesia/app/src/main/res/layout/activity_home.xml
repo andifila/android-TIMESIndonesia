@@ -7,7 +7,7 @@
     <RelativeLayout
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_60"
+        android:layout_height="@dimen/margin_50"
         android:background="@color/colorPrimary"
         android:orientation="horizontal">
         <ImageView
@@ -54,7 +54,7 @@
                         android:layout_width="@dimen/margin_50"
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/heading"
-                        android:layout_marginEnd="@dimen/margin_12"
+                        android:layout_marginEnd="@dimen/margin_8"
                         app:srcCompat="@drawable/ic_menu_white_24dp"/>
                     <ImageButton
                         android:id="@+id/btnPopuler"
@@ -63,7 +63,7 @@
                         android:layout_width="@dimen/margin_50"
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/populer"
-                        android:layout_marginEnd="@dimen/margin_12"
+                        android:layout_marginEnd="@dimen/margin_8"
                         app:srcCompat="@drawable/ic_flag_white_24dp"/>
                     <ImageButton
                         android:id="@+id/btnFokus"
@@ -72,7 +72,7 @@
                         android:layout_width="@dimen/margin_50"
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/fokus"
-                        android:layout_marginEnd="@dimen/margin_12"
+                        android:layout_marginEnd="@dimen/margin_8"
                         app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"/>
                     <ImageButton
                         android:id="@+id/btnFoto"
@@ -81,7 +81,7 @@
                         android:layout_width="@dimen/margin_50"
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/foto"
-                        android:layout_marginEnd="@dimen/margin_12"
+                        android:layout_marginEnd="@dimen/margin_8"
                         app:srcCompat="@drawable/ic_photo_library_white_24dp"/>
                     <ImageButton
                         android:id="@+id/btnIndeks"
@@ -90,7 +90,7 @@
                         android:layout_width="@dimen/margin_50"
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/indexs"
-                        android:layout_marginEnd="@dimen/margin_12"
+                        android:layout_marginEnd="@dimen/margin_8"
                         app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"/>
                 </TableRow>
 
@@ -105,31 +105,31 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_12"/>
+                        android:layout_marginEnd="@dimen/margin_8"/>
                     <TextView
                         android:text="@string/populer"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_12"/>
+                        android:layout_marginEnd="@dimen/margin_8"/>
                     <TextView
                         android:text="@string/fokus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_12"/>
+                        android:layout_marginEnd="@dimen/margin_8"/>
                     <TextView
                         android:text="@string/foto"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_12" />
+                        android:layout_marginEnd="@dimen/margin_8" />
                     <TextView
                         android:text="@string/indexs"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_12" />
+                        android:layout_marginEnd="@dimen/margin_8" />
                 </TableRow>
             </TableLayout>
 
@@ -177,7 +177,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_10">
+                            android:layout_margin="@dimen/margin_8">
                             <TextView
                                 android:id="@+id/judul1"
                                 android:layout_width="wrap_content"
@@ -233,7 +233,7 @@
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_10">
+                            android:layout_margin="@dimen/margin_8">
                             <TextView
                                 android:id="@+id/judul2"
                                 android:layout_width="wrap_content"
@@ -288,7 +288,7 @@
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_10">
+                            android:layout_margin="@dimen/margin_8">
                             <TextView
                                 android:id="@+id/judul3"
                                 android:layout_width="wrap_content"
@@ -343,7 +343,7 @@
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_10">
+                            android:layout_margin="@dimen/margin_8">
                             <TextView
                                 android:id="@+id/judul4"
                                 android:layout_width="wrap_content"
@@ -397,7 +397,7 @@
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_10">
+                            android:layout_margin="@dimen/margin_8">
                             <TextView
                                 android:id="@+id/judul5"
                                 android:layout_width="wrap_content"

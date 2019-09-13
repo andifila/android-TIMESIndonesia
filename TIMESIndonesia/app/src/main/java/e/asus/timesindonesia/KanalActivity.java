@@ -22,17 +22,12 @@ public class KanalActivity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_kanal, container, false);
-
         more = view.findViewById(R.id.btn_more);
-
         linearLayout = view.findViewById(R.id.bottomsheet_kanal);
-
-        //final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(linearLayout);
         more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 bottomSheetDialog.show();
-//                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
             }
         });
         createBottomSheetDialog();

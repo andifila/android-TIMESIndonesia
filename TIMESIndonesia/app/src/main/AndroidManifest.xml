@@ -14,22 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FavoritActivity"/>
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".FullScreenActivity" />
-        <!-- <activity -->
-        <!-- android:name=".HomeActivity" -->
-        <!-- android:label="@string/title_activity_home" /> -->
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".NewsDetailActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
         <activity
             android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
             android:noHistory="true"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -38,6 +25,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:name=".FavoritActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FullScreenActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

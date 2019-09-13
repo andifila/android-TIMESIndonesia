@@ -49,6 +49,8 @@ public class VideoActivity extends Fragment {
 
         toolbar = view.findViewById(R.id.toolbar);
         toolbar.inflateMenu(R.menu.custom_option_menu);
+        toolbar.setTitle("Video Terkini");
+
         createBottomSheetDialog();
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -69,9 +71,6 @@ public class VideoActivity extends Fragment {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);
-            //set.setOnClickListener(getActivity());
-            //fav.setOnClickListener(this);
-            //relativeLayout.setOnClickListener(this);
             bottomSheetDialog = new BottomSheetDialog(getActivity());
             bottomSheetDialog.setContentView(view);
         }
