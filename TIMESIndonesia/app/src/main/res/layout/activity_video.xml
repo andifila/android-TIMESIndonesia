@@ -6,18 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/background"
+        android:layout_height="@dimen/margin_60"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Video Terkini"
-        android:gravity="center" />
+        app:title="Video Terkini"/>
+
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_video"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:id="@+id/rv_video"/>
+        android:clipToPadding="false"/>
 </LinearLayout>

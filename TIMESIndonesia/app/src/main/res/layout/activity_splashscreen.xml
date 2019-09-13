@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:src="@drawable/img_logo"
         android:scaleType="centerInside"
-        android:layout_marginLeft="@dimen/activity_left_margin"
-        android:layout_marginRight="@dimen/activity_right_margin"/>
-
+        android:layout_marginLeft="@dimen/margin_60"
+        android:layout_marginRight="@dimen/margin_60"/>
 </LinearLayout>

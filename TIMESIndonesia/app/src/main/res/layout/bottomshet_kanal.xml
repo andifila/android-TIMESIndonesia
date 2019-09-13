@@ -1,125 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottomsheet_kanal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/layout_melengkung"
     android:padding="@dimen/margin_10">
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_15"
         android:id="@+id/kesehatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            app:srcCompat="@drawable/heartbeat"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/heartbeat"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kesehatan"
-            android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
             android:id="@+id/txt_kesehatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kesehatan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"
-            />
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_15"
         android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/picture"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/picture"/>
         <TextView
+            android:id="@+id/txt_foto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Foto"
+            android:text="@string/foto"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_foto"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/margin_10"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/graphic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
-        android:id="@+id/graphic"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/layers"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/layers"/>
         <TextView
+            android:id="@+id/txt_graphic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Graphic"
+            android:text="@string/graphic"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_graphic"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"
-            />
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/opini"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
-        android:id="@+id/opini"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/feedback"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/feedback"/>
         <TextView
+            android:id="@+id/txt_opini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Opini"
+            android:text="@string/opini"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_opini"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/margin_10"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/vlog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
-        android:id="@+id/vlog"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/vlog"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/vlog"/>
         <TextView
+            android:id="@+id/txt_vlog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Times V-log"
+            android:text="@string/vlog"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_vlog"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"
-            />
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
 
     <LinearLayout
@@ -129,44 +124,39 @@
         android:id="@+id/glutnews"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/text_lines"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/text_lines"/>
         <TextView
+            android:id="@+id/txt_glutnews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Glutera News"
+            android:text="@string/glutera"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_glutnews"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/margin_10"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/indeks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
-        android:id="@+id/indeks"
         android:gravity="center_horizontal|center_vertical">
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/index"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            />
+            app:srcCompat="@drawable/index"/>
         <TextView
+            android:id="@+id/txt_fav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Indeks Rekomendasi Indonesia"
+            android:text="@string/IRI"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
-            android:id="@+id/txt_fav"
+            android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"
-            />
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
-
-
 </LinearLayout>

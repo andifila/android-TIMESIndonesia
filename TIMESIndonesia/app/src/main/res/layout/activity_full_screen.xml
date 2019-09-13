@@ -7,8 +7,8 @@
     tools:context=".FullScreenActivity">
 
     <WebView
+        android:id="@+id/full_video"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/full_video"></WebView>
-
+        android:layout_height="match_parent">
+    </WebView>
 </LinearLayout>

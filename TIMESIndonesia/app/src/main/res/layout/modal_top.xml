@@ -23,9 +23,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Favorit"
+            android:text="@string/favorit"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
+            android:textSize="@dimen/size_12"
             android:id="@+id/txt_fav"
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/margin_10"
@@ -47,9 +47,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pengaturan"
+            android:text="@string/pengaturan"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_isi"
+            android:textSize="@dimen/size_12"
             android:id="@+id/txt_pengaturan"
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/margin_10"/>

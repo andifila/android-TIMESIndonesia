@@ -10,75 +10,76 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/white"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Pengaturan"
-        />
+        app:titleTextColor="@color/white"
+        app:title="Pengaturan" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="25dp">
+        android:padding="@dimen/margin_25">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="@dimen/margin_28">
             <TextView
+                android:id="@+id/tv_push"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/notif"
-                android:id="@+id/tv_push"
-                android:textSize="@dimen/size_judul"/>
+                android:textSize="@dimen/size_14"/>
             <Switch
+                android:id="@+id/switch_push"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/tv_push"
-                android:layout_alignParentEnd="true"
-                android:id="@+id/switch_push"/>
+                android:layout_alignParentEnd="true"/>
         </RelativeLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/share"
-            android:textSize="@dimen/size_judul"
+            android:textSize="@dimen/size_14"
             android:layout_marginBottom="@dimen/margin_28"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rate"
             android:layout_marginBottom="@dimen/margin_28"
-            android:textSize="@dimen/size_judul"/>
+            android:textSize="@dimen/size_14"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fb"
             android:layout_marginBottom="@dimen/margin_28"
-            android:textSize="@dimen/size_judul"/>
+            android:textSize="@dimen/size_14"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/twit"
-            android:textSize="@dimen/size_judul"
+            android:textSize="@dimen/size_14"
             android:layout_marginBottom="@dimen/margin_14"/>
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
             android:id="@+id/garis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/black"
             android:layout_marginBottom="@dimen/margin_14"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pp"
-            android:textSize="@dimen/size_judul"
+            android:textSize="@dimen/size_14"
             android:layout_marginBottom="@dimen/margin_28"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/about"
-            android:textSize="@dimen/size_judul" />
+            android:textSize="@dimen/size_14" />
     </LinearLayout>
 
 </LinearLayout>

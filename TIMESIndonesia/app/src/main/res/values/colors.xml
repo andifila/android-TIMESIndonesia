@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#960000</color>
-    <color name="colorPrimaryDark">#7A0404</color>
-    <color name="colorAccent">#960000</color>
-    <color name="background">#960000</color>
+    <color name="colorPrimary">#A50000</color>
+    <color name="colorDark">#000</color>
 
-    <color name="headline">#E74C3C</color>
+    <color name="heading">#E74C3C</color>
     <color name="populer">#E67E22</color>
     <color name="fokus">#F1C40F</color>
     <color name="foto">#3498DB</color>
-    <color name="indexs">#2ECC71</color>s
+    <color name="indexs">#2ECC71</color>
+
+    <color name="gray">#E2DCDC</color>
+
     <color name="black">#000</color>
     <color name="white">#fff</color>
 </resources>

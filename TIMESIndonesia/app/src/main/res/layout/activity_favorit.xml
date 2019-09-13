@@ -6,26 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".FavoritActivity"
     android:orientation="vertical">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#fff"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Favorit" />
+        app:titleTextColor="@color/white"
+        app:title="@string/title_favorit" />
+
     <android.support.v7.widget.CardView
-        android:layout_width="350dp"
+        android:layout_width="@dimen/margin_350"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="15dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_18">
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_8"
+        app:cardCornerRadius="@dimen/margin_15">
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_20"
-        android:layout_marginEnd="@dimen/margin_20"
-        android:layout_marginTop="@dimen/margin_12"
-        android:layout_marginBottom="@dimen/margin_12"
-        android:id="@+id/rv_fav"/>
+        android:layout_margin="@dimen/margin_8"/>
     </android.support.v7.widget.CardView>
 </LinearLayout>
