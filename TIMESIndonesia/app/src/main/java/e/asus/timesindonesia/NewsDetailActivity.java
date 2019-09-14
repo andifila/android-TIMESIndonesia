@@ -14,6 +14,7 @@ import e.asus.timesindonesia.model.pencarian;
 import e.asus.timesindonesia.model.pencarianData;
 
 public class NewsDetailActivity extends AppCompatActivity {
+    Toolbar toolbar;
     private ArrayList<pencarian> list = new ArrayList<>();
     RecyclerView rvBerita;
 
@@ -22,6 +23,8 @@ public class NewsDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news_detail);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("News Detail");
+
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

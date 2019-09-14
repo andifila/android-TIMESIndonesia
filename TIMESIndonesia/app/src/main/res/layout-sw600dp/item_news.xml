@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_8"
+    android:layout_marginTop="@dimen/margin_4"
+    android:layout_marginRight="@dimen/margin_8"
+    android:layout_marginBottom="@dimen/margin_4"
+    card_view:cardCornerRadius="@dimen/margin_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_100"
+        android:padding="@dimen/margin_8">
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="@dimen/margin_70"
+            android:layout_marginBottom="@dimen/margin_4"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:text="Kategori" />
+
+        <TextView
+            android:id="@+id/tv_item_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:maxLines="2"
+            tools:text="Judul" />
+        <TextView
+            android:id="@+id/tv_item_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_judul"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:ellipsize="end"
+            android:textSize="@dimen/size_10"
+            tools:text="Judul" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

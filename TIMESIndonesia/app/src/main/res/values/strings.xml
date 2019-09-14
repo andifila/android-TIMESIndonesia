@@ -33,14 +33,14 @@
     <string name="kesehatan">Kesehatan</string>
     <string name="video_terkait">Video Terkait</string>
     <string name="berita_terkait">Berita Terkait</string>
-    <string name="peristiwa">Peristiwa</string>
-    <string name="politik">Politik</string>
-    <string name="ekonomi">Ekonomi</string>
-    <string name="gaya_hidup">Gaya Hidup</string>
-    <string name="olahraga">Olahraga</string>
-    <string name="pendidikan">Pendidikan</string>
-    <string name="ketahanan_informasi">Ketahanan Informasi</string>
-    <string name="more">More</string>
+    <string name="peristiwa">PERISTIWA</string>
+    <string name="politik">POLITIK</string>
+    <string name="ekonomi">EKONOMI</string>
+    <string name="gaya_hidup">GAYA HIDUP</string>
+    <string name="olahraga">OLAHRAGA</string>
+    <string name="pendidikan">PENDIDIKAN</string>
+    <string name="ketahanan_informasi">KETAHANAN INFORMASI</string>
+    <string name="more">MORE</string>
 
     <string name="satu">1.</string>
     <string name="dua">2.</string>
