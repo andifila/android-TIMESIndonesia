@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
@@ -17,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_100"
         android:padding="@dimen/margin_8">
+
         <ImageView
             android:id="@+id/img_item_photo"
             android:layout_width="@dimen/margin_100"
@@ -24,6 +24,7 @@
             android:layout_marginBottom="@dimen/margin_4"
             android:scaleType="centerCrop"
             tools:src="@color/colorPrimary" />
+
         <TextView
             android:id="@+id/tv_item_name"
             android:layout_width="match_parent"
@@ -49,6 +50,7 @@
             android:layout_toRightOf="@id/img_item_photo"
             android:maxLines="2"
             tools:text="Judul" />
+
         <TextView
             android:id="@+id/tv_item_tgl"
             android:layout_width="match_parent"

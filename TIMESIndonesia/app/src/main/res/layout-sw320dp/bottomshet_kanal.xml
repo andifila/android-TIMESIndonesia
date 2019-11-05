@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottomsheet_kanal"
     android:orientation="vertical"
@@ -15,11 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/heartbeat"/>
+            app:srcCompat="@drawable/heartbeat" />
+
         <TextView
             android:id="@+id/txt_kesehatan"
             android:layout_width="match_parent"
@@ -37,11 +38,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/picture"/>
+            app:srcCompat="@drawable/picture" />
+
         <TextView
             android:id="@+id/txt_foto"
             android:layout_width="match_parent"
@@ -50,19 +53,22 @@
             android:textColor="@color/black"
             android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"/>
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/graphic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/layers"/>
+            app:srcCompat="@drawable/layers" />
+
         <TextView
             android:id="@+id/txt_graphic"
             android:layout_width="match_parent"
@@ -80,11 +86,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/feedback"/>
+            app:srcCompat="@drawable/feedback" />
+
         <TextView
             android:id="@+id/txt_opini"
             android:layout_width="match_parent"
@@ -93,19 +101,22 @@
             android:textColor="@color/black"
             android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"/>
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/vlog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/vlog"/>
+            app:srcCompat="@drawable/vlog" />
+
         <TextView
             android:id="@+id/txt_vlog"
             android:layout_width="match_parent"
@@ -123,11 +134,13 @@
         android:layout_margin="@dimen/margin_15"
         android:id="@+id/glutnews"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/text_lines"/>
+            app:srcCompat="@drawable/text_lines" />
+
         <TextView
             android:id="@+id/txt_glutnews"
             android:layout_width="match_parent"
@@ -136,19 +149,22 @@
             android:textColor="@color/black"
             android:textSize="@dimen/size_12"
             android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10"/>
+            android:layout_marginStart="@dimen/margin_10" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/indeks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
         android:gravity="center_horizontal|center_vertical">
+
         <ImageView
             android:layout_width="@dimen/margin_24"
             android:layout_height="@dimen/margin_24"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/index"/>
+            app:srcCompat="@drawable/index" />
+
         <TextView
             android:id="@+id/txt_fav"
             android:layout_width="match_parent"

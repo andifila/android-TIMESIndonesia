@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -11,7 +10,7 @@
         android:layout_height="@dimen/margin_0"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:title="@string/title_cari"/>
+        app:title="@string/title_cari" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +21,7 @@
         android:layout_marginTop="@dimen/margin_18"
         android:layout_marginBottom="@dimen/margin_15"
         android:id="@+id/layout_seacrh">
+
         <EditText
             android:id="@+id/et_cari"
             android:layout_width="@dimen/margin_250"
@@ -32,24 +32,28 @@
             android:textColor="@color/black"
             android:focusable="true"
             android:drawableRight="@drawable/ic_clear_black_24dp"
-            android:background="@drawable/square_edit_text"/>
+            android:background="@drawable/square_edit_text" />
+
         <Button
             android:layout_width="@dimen/margin_80"
             android:layout_height="@dimen/margin_40"
             android:text="@string/title_cari"
             android:textColor="@color/white"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary" />
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_seacrh">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_24"
             android:layout_marginLeft="@dimen/margin_24"
             android:layout_marginBottom="@dimen/margin_24">
+
             <TextView
                 android:id="@+id/txt_populer"
                 android:layout_width="match_parent"
@@ -57,14 +61,16 @@
                 android:text="@string/pencarian"
                 android:layout_marginTop="@dimen/margin_24"
                 android:layout_marginBottom="@dimen/margin_4"
-                android:textSize="@dimen/size_14"/>
+                android:textSize="@dimen/size_14" />
+
             <View
                 android:id="@+id/garis"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_1"
                 android:layout_marginTop="@dimen/margin_5"
                 android:background="@color/black"
-                android:layout_below="@id/txt_populer"/>
+                android:layout_below="@id/txt_populer" />
+
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_150"
@@ -79,20 +85,21 @@
                 android:text="@string/rekomendasi"
                 android:layout_marginTop="@dimen/margin_24"
                 android:layout_marginBottom="@dimen/margin_4"
-                android:textSize="@dimen/size_14"/>
+                android:textSize="@dimen/size_14" />
+
             <View
                 android:id="@+id/garis2"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_1"
                 android:background="@color/black"
-                android:layout_below="@id/txt_rekomendasi"/>
+                android:layout_below="@id/txt_rekomendasi" />
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rc_rekomendasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/garis2"
-                android:layout_marginTop="@dimen/margin_10">
-            </android.support.v7.widget.RecyclerView>
+                android:layout_marginTop="@dimen/margin_10"></android.support.v7.widget.RecyclerView>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

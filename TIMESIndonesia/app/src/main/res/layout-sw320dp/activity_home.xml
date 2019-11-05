@@ -10,20 +10,22 @@
         android:layout_height="@dimen/margin_50"
         android:background="@color/colorPrimary"
         android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/top"
             android:layout_width="@dimen/margin_125"
             android:layout_height="@dimen/margin_24"
             android:src="@drawable/img_logo"
             android:layout_centerInParent="true"
-            android:layout_marginRight="@dimen/margin_80"/>
+            android:layout_marginRight="@dimen/margin_80" />
+
         <ImageButton
             android:id="@+id/btn_menu"
             android:layout_width="@dimen/margin_4"
             android:layout_height="@dimen/margin_16"
             android:layout_toEndOf="@id/top"
             android:layout_centerInParent="true"
-            app:srcCompat="@drawable/ic_more_vert_white_24dp"/>
+            app:srcCompat="@drawable/ic_more_vert_white_24dp" />
     </RelativeLayout>
 
     <ScrollView
@@ -31,14 +33,17 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_0"
         android:layout_weight="1.0">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_80"
                 android:background="@color/colorPrimary">
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -47,6 +52,7 @@
                     android:layout_marginStart="@dimen/margin_18"
                     android:layout_marginEnd="@dimen/margin_18"
                     android:gravity="center_horizontal|center_vertical">
+
                     <ImageButton
                         android:id="@+id/btnHeadline"
                         android:layout_gravity="center"
@@ -55,7 +61,8 @@
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/heading"
                         android:layout_marginEnd="@dimen/margin_8"
-                        app:srcCompat="@drawable/ic_menu_white_24dp"/>
+                        app:srcCompat="@drawable/ic_menu_white_24dp" />
+
                     <ImageButton
                         android:id="@+id/btnPopuler"
                         android:layout_gravity="center"
@@ -64,7 +71,8 @@
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/populer"
                         android:layout_marginEnd="@dimen/margin_8"
-                        app:srcCompat="@drawable/ic_flag_white_24dp"/>
+                        app:srcCompat="@drawable/ic_flag_white_24dp" />
+
                     <ImageButton
                         android:id="@+id/btnFokus"
                         android:layout_gravity="center"
@@ -73,7 +81,8 @@
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/fokus"
                         android:layout_marginEnd="@dimen/margin_8"
-                        app:srcCompat="@drawable/ic_center_focus_weak_white_24dp"/>
+                        app:srcCompat="@drawable/ic_center_focus_weak_white_24dp" />
+
                     <ImageButton
                         android:id="@+id/btnFoto"
                         android:layout_gravity="center"
@@ -82,7 +91,8 @@
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/foto"
                         android:layout_marginEnd="@dimen/margin_8"
-                        app:srcCompat="@drawable/ic_photo_library_white_24dp"/>
+                        app:srcCompat="@drawable/ic_photo_library_white_24dp" />
+
                     <ImageButton
                         android:id="@+id/btnIndeks"
                         android:layout_gravity="center"
@@ -91,7 +101,7 @@
                         android:layout_height="@dimen/margin_50"
                         android:backgroundTint="@color/indexs"
                         android:layout_marginEnd="@dimen/margin_8"
-                        app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp"/>
+                        app:srcCompat="@drawable/ic_format_list_bulleted_white_24dp" />
                 </TableRow>
 
                 <TableRow
@@ -100,30 +110,35 @@
                     android:layout_marginLeft="@dimen/margin_18"
                     android:layout_marginRight="@dimen/margin_18"
                     android:gravity="center_horizontal|center_vertical">
+
                     <TextView
                         android:text="@string/headline"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_8"/>
+                        android:layout_marginEnd="@dimen/margin_8" />
+
                     <TextView
                         android:text="@string/populer"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_8"/>
+                        android:layout_marginEnd="@dimen/margin_8" />
+
                     <TextView
                         android:text="@string/fokus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
-                        android:layout_marginEnd="@dimen/margin_8"/>
+                        android:layout_marginEnd="@dimen/margin_8" />
+
                     <TextView
                         android:text="@string/foto"
                         android:textColor="@color/white"
                         android:textSize="@dimen/margin_14"
                         android:layout_gravity="center"
                         android:layout_marginEnd="@dimen/margin_8" />
+
                     <TextView
                         android:text="@string/indexs"
                         android:textColor="@color/white"
@@ -143,6 +158,7 @@
                 android:text="@string/heading"
                 android:textSize="@dimen/size_18"
                 android:textColor="@color/black" />
+
             <android.support.v7.widget.CardView
                 android:layout_width="@dimen/margin_350"
                 android:layout_height="match_parent"
@@ -150,10 +166,12 @@
                 android:layout_marginStart="@dimen/margin_4"
                 android:layout_marginEnd="@dimen/margin_4"
                 app:cardCornerRadius="@dimen/margin_15">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal">
+
                     <TextView
                         android:id="@+id/nomer1"
                         android:layout_width="wrap_content"
@@ -164,7 +182,8 @@
                         android:textSize="@dimen/size_16"
                         android:layout_marginStart="@dimen/margin_18"
                         android:layout_marginEnd="@dimen/margin_18"
-                        android:layout_marginTop="50dp"/>
+                        android:layout_marginTop="50dp" />
+
                     <android.support.v7.widget.CardView
                         android:id="@+id/card1"
                         android:layout_width="wrap_content"
@@ -174,17 +193,20 @@
                         android:layout_marginBottom="@dimen/margin_5"
                         android:layout_marginEnd="@dimen/margin_10"
                         app:cardCornerRadius="@dimen/margin_5">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_8">
+
                             <TextView
                                 android:id="@+id/judul1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
-                                android:textColor="@color/colorPrimary"/>
+                                android:textColor="@color/colorPrimary" />
+
                             <TextView
                                 android:id="@+id/isi1"
                                 android:layout_width="@dimen/margin_200"
@@ -192,18 +214,20 @@
                                 android:text="@string/isi"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/size_12"
-                                android:layout_below="@+id/judul1"/>
+                                android:layout_below="@+id/judul1" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
-                                android:layout_below="@+id/isi1"/>
+                                android:layout_below="@+id/isi1" />
+
                             <ImageView
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_100"
                                 android:src="@drawable/berita"
-                                android:layout_toEndOf="@id/isi1"/>
+                                android:layout_toEndOf="@id/isi1" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
@@ -219,7 +243,8 @@
                         android:layout_marginEnd="@dimen/margin_18"
                         android:layout_marginTop="@dimen/margin_88"
                         android:layout_marginBottom="@dimen/margin_88"
-                        android:gravity="center_vertical"/>
+                        android:gravity="center_vertical" />
+
                     <android.support.v7.widget.CardView
                         android:id="@+id/card2"
                         android:layout_width="wrap_content"
@@ -230,17 +255,20 @@
                         android:layout_marginBottom="@dimen/margin_5"
                         android:layout_marginEnd="@dimen/margin_10"
                         app:cardCornerRadius="@dimen/margin_5">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_8">
+
                             <TextView
                                 android:id="@+id/judul2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
-                                android:textColor="@color/colorPrimary"/>
+                                android:textColor="@color/colorPrimary" />
+
                             <TextView
                                 android:id="@+id/isi2"
                                 android:layout_width="@dimen/margin_200"
@@ -248,13 +276,15 @@
                                 android:text="@string/isi"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/size_12"
-                                android:layout_below="@+id/judul2"/>
+                                android:layout_below="@+id/judul2" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
-                                android:layout_below="@+id/isi2"/>
+                                android:layout_below="@+id/isi2" />
+
                             <ImageView
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_100"
@@ -275,6 +305,7 @@
                         android:layout_marginEnd="@dimen/margin_18"
                         android:layout_marginBottom="@dimen/margin_88"
                         android:gravity="center_vertical" />
+
                     <android.support.v7.widget.CardView
                         android:id="@+id/card3"
                         android:layout_width="wrap_content"
@@ -284,18 +315,21 @@
                         android:layout_marginTop="@dimen/margin_10"
                         android:layout_marginBottom="@dimen/margin_5"
                         android:layout_marginEnd="@dimen/margin_10"
-                        app:cardCornerRadius="@dimen/margin_5">                                >
+                        app:cardCornerRadius="@dimen/margin_5">>
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_8">
+
                             <TextView
                                 android:id="@+id/judul3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
-                                android:textColor="@color/colorPrimary"/>
+                                android:textColor="@color/colorPrimary" />
+
                             <TextView
                                 android:id="@+id/isi3"
                                 android:layout_width="@dimen/margin_200"
@@ -303,13 +337,15 @@
                                 android:text="@string/isi"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/size_12"
-                                android:layout_below="@+id/judul3"/>
+                                android:layout_below="@+id/judul3" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
-                                android:layout_below="@+id/isi3"/>
+                                android:layout_below="@+id/isi3" />
+
                             <ImageView
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_100"
@@ -329,7 +365,8 @@
                         android:layout_marginStart="@dimen/margin_18"
                         android:layout_marginEnd="@dimen/margin_18"
                         android:layout_marginBottom="@dimen/margin_88"
-                        android:gravity="center_vertical"/>
+                        android:gravity="center_vertical" />
+
                     <android.support.v7.widget.CardView
                         android:id="@+id/card4"
                         android:layout_width="wrap_content"
@@ -340,17 +377,20 @@
                         android:layout_marginBottom="@dimen/margin_5"
                         android:layout_marginEnd="@dimen/margin_10"
                         app:cardCornerRadius="@dimen/margin_5">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_8">
+
                             <TextView
                                 android:id="@+id/judul4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
-                                android:textColor="@color/colorPrimary"/>
+                                android:textColor="@color/colorPrimary" />
+
                             <TextView
                                 android:id="@+id/isi4"
                                 android:layout_width="@dimen/margin_200"
@@ -358,18 +398,20 @@
                                 android:text="@string/isi"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/size_12"
-                                android:layout_below="@+id/judul4"/>
+                                android:layout_below="@+id/judul4" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
-                                android:layout_below="@+id/isi4"/>
+                                android:layout_below="@+id/isi4" />
+
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:src="@drawable/berita"
-                                android:layout_toEndOf="@+id/isi4"/>
+                                android:layout_toEndOf="@+id/isi4" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
@@ -384,6 +426,7 @@
                         android:layout_marginStart="@dimen/margin_18"
                         android:layout_marginEnd="@dimen/margin_18"
                         android:gravity="center_vertical" />
+
                     <android.support.v7.widget.CardView
                         android:id="@+id/card5"
                         android:layout_width="wrap_content"
@@ -394,17 +437,20 @@
                         android:layout_marginBottom="@dimen/margin_10"
                         android:layout_marginEnd="@dimen/margin_10"
                         app:cardCornerRadius="@dimen/margin_5">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_8">
+
                             <TextView
                                 android:id="@+id/judul5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
-                                android:textColor="@color/colorPrimary"/>
+                                android:textColor="@color/colorPrimary" />
+
                             <TextView
                                 android:id="@+id/isi5"
                                 android:layout_width="@dimen/margin_200"
@@ -412,13 +458,15 @@
                                 android:text="@string/isi"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/size_12"
-                                android:layout_below="@+id/judul5"/>
+                                android:layout_below="@+id/judul5" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
-                                android:layout_below="@+id/isi5"/>
+                                android:layout_below="@+id/isi5" />
+
                             <ImageView
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_100"
@@ -439,6 +487,7 @@
                 android:text="@string/heading2"
                 android:textSize="@dimen/size_18"
                 android:textColor="@color/black" />
+
             <android.support.v7.widget.CardView
                 android:layout_width="@dimen/margin_350"
                 android:layout_height="match_parent"
@@ -446,12 +495,15 @@
                 android:layout_marginStart="@dimen/margin_4"
                 android:layout_marginEnd="@dimen/margin_4"
                 app:cardCornerRadius="@dimen/margin_15">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -465,15 +517,18 @@
                                 android:layout_marginBottom="@dimen/margin_8"
                                 android:layout_marginLeft="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
+
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/margin_8">
+
                                     <ImageView
                                         android:id="@+id/img_berita"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video"/>
+                                        android:src="@drawable/video" />
+
                                     <TextView
                                         android:id="@+id/vd_judul"
                                         android:layout_width="wrap_content"
@@ -481,7 +536,8 @@
                                         android:text="@string/judul2"
                                         android:textSize="@dimen/size_14"
                                         android:textColor="@color/colorPrimary"
-                                        android:layout_below="@id/img_berita"/>
+                                        android:layout_below="@id/img_berita" />
+
                                     <TextView
                                         android:id="@+id/vd_isi"
                                         android:layout_width="wrap_content"
@@ -489,13 +545,14 @@
                                         android:text="@string/isi2"
                                         android:textSize="@dimen/size_12"
                                         android:textColor="@color/black"
-                                        android:layout_below="@+id/vd_judul"/>
+                                        android:layout_below="@+id/vd_judul" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/tanggal"
                                         android:textSize="@dimen/size_10"
-                                        android:layout_below="@+id/vd_isi"/>
+                                        android:layout_below="@+id/vd_isi" />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
 
@@ -506,15 +563,18 @@
                                 android:layout_marginBottom="@dimen/margin_8"
                                 android:layout_marginLeft="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
+
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/margin_8">
+
                                     <ImageView
                                         android:id="@+id/img_berita2"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video"/>
+                                        android:src="@drawable/video" />
+
                                     <TextView
                                         android:id="@+id/vd_judul2"
                                         android:layout_width="wrap_content"
@@ -522,7 +582,8 @@
                                         android:text="@string/judul2"
                                         android:textSize="@dimen/size_14"
                                         android:textColor="@color/colorPrimary"
-                                        android:layout_below="@id/img_berita2"/>
+                                        android:layout_below="@id/img_berita2" />
+
                                     <TextView
                                         android:id="@+id/vd_isi2"
                                         android:layout_width="wrap_content"
@@ -530,13 +591,14 @@
                                         android:text="@string/isi2"
                                         android:textSize="@dimen/size_12"
                                         android:textColor="@color/black"
-                                        android:layout_below="@+id/vd_judul2"/>
+                                        android:layout_below="@+id/vd_judul2" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/tanggal"
                                         android:textSize="@dimen/size_10"
-                                        android:layout_below="@+id/vd_isi2"/>
+                                        android:layout_below="@+id/vd_isi2" />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
 
@@ -548,15 +610,18 @@
                                 android:layout_marginLeft="@dimen/margin_8"
                                 android:layout_marginRight="@dimen/margin_12"
                                 app:cardCornerRadius="@dimen/margin_15">
+
                                 <RelativeLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/margin_8">
+
                                     <ImageView
                                         android:id="@+id/img_berita3"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video"/>
+                                        android:src="@drawable/video" />
+
                                     <TextView
                                         android:id="@+id/vd_judul3"
                                         android:layout_width="wrap_content"
@@ -564,7 +629,8 @@
                                         android:text="@string/judul2"
                                         android:textSize="@dimen/size_14"
                                         android:textColor="@color/colorPrimary"
-                                        android:layout_below="@+id/img_berita3"/>
+                                        android:layout_below="@+id/img_berita3" />
+
                                     <TextView
                                         android:id="@+id/vd_isi3"
                                         android:layout_width="wrap_content"
@@ -572,13 +638,14 @@
                                         android:text="@string/isi2"
                                         android:textSize="@dimen/size_12"
                                         android:textColor="@color/black"
-                                        android:layout_below="@+id/vd_judul3"/>
+                                        android:layout_below="@+id/vd_judul3" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/tanggal"
                                         android:textSize="@dimen/size_10"
-                                        android:layout_below="@+id/vd_isi3"/>
+                                        android:layout_below="@+id/vd_isi3" />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
                         </LinearLayout>
@@ -596,6 +663,7 @@
                 android:text="@string/heading3"
                 android:textSize="@dimen/size_18"
                 android:textColor="@color/black" />
+
             <android.support.v7.widget.CardView
                 android:layout_width="@dimen/margin_350"
                 android:layout_height="match_parent"
@@ -604,6 +672,7 @@
                 android:layout_marginEnd="@dimen/margin_4"
                 android:layout_marginBottom="@dimen/margin_24"
                 app:cardCornerRadius="@dimen/margin_15">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -618,17 +687,20 @@
                         android:layout_marginRight="@dimen/margin_10"
                         android:layout_marginLeft="@dimen/margin_10"
                         app:cardCornerRadius="15dp">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_4">
+
                             <ImageView
                                 android:id="@+id/img_today1"
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_65"
                                 android:layout_marginRight="@dimen/margin_4"
                                 android:src="@drawable/berita"
-                                android:layout_alignParentStart="true"/>
+                                android:layout_alignParentStart="true" />
+
                             <TextView
                                 android:id="@+id/td_judul"
                                 android:layout_width="wrap_content"
@@ -636,7 +708,8 @@
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
                                 android:textColor="@color/colorPrimary"
-                                android:layout_toEndOf="@+id/img_today1"/>
+                                android:layout_toEndOf="@+id/img_today1" />
+
                             <TextView
                                 android:id="@+id/td_isi"
                                 android:layout_width="wrap_content"
@@ -645,14 +718,15 @@
                                 android:textSize="@dimen/size_12"
                                 android:textColor="@color/black"
                                 android:layout_below="@+id/td_judul"
-                                android:layout_toEndOf="@+id/img_today1"/>
+                                android:layout_toEndOf="@+id/img_today1" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
                                 android:layout_below="@+id/td_isi"
-                                android:layout_toEndOf="@+id/img_today1"/>
+                                android:layout_toEndOf="@+id/img_today1" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
@@ -665,17 +739,20 @@
                         android:layout_marginLeft="@dimen/margin_10"
                         android:layout_below="@+id/card_td_1"
                         app:cardCornerRadius="@dimen/margin_15">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_10">
+
                             <ImageView
                                 android:id="@+id/img_today2"
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_65"
                                 android:layout_marginRight="@dimen/margin_4"
                                 android:src="@drawable/berita"
-                                android:layout_alignParentStart="true"/>
+                                android:layout_alignParentStart="true" />
+
                             <TextView
                                 android:id="@+id/td_judul2"
                                 android:layout_width="wrap_content"
@@ -683,7 +760,8 @@
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
                                 android:textColor="@color/colorPrimary"
-                                android:layout_toEndOf="@+id/img_today2"/>
+                                android:layout_toEndOf="@+id/img_today2" />
+
                             <TextView
                                 android:id="@+id/td_isi2"
                                 android:layout_width="wrap_content"
@@ -692,14 +770,15 @@
                                 android:textSize="@dimen/size_12"
                                 android:textColor="@color/black"
                                 android:layout_below="@+id/td_judul2"
-                                android:layout_toEndOf="@+id/img_today2"/>
+                                android:layout_toEndOf="@+id/img_today2" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
                                 android:layout_below="@+id/td_isi2"
-                                android:layout_toEndOf="@+id/img_today2"/>
+                                android:layout_toEndOf="@+id/img_today2" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
@@ -712,17 +791,20 @@
                         android:layout_marginLeft="@dimen/margin_10"
                         android:layout_below="@+id/card_td_2"
                         app:cardCornerRadius="15dp">
+
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin_10">
+
                             <ImageView
                                 android:id="@+id/img_today3"
                                 android:layout_width="@dimen/margin_100"
                                 android:layout_height="@dimen/margin_65"
                                 android:layout_marginRight="@dimen/margin_4"
                                 android:src="@drawable/berita"
-                                android:layout_alignParentStart="true"/>
+                                android:layout_alignParentStart="true" />
+
                             <TextView
                                 android:id="@+id/td_judul3"
                                 android:layout_width="wrap_content"
@@ -730,7 +812,8 @@
                                 android:text="@string/judul"
                                 android:textSize="@dimen/size_14"
                                 android:textColor="@color/colorPrimary"
-                                android:layout_toEndOf="@+id/img_today3"/>
+                                android:layout_toEndOf="@+id/img_today3" />
+
                             <TextView
                                 android:id="@+id/td_isi3"
                                 android:layout_width="wrap_content"
@@ -740,13 +823,14 @@
                                 android:textColor="@color/black"
                                 android:layout_below="@+id/td_judul3"
                                 android:layout_toEndOf="@+id/img_today3" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/tanggal"
                                 android:textSize="@dimen/size_10"
                                 android:layout_below="@+id/td_isi3"
-                                android:layout_toEndOf="@+id/img_today3"/>
+                                android:layout_toEndOf="@+id/img_today3" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
                 </RelativeLayout>

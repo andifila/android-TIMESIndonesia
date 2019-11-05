@@ -8,5 +8,5 @@
     <item
         android:id="@+id/action_grid"
         android:title="@string/pengaturan"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 </menu>

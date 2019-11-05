@@ -5,5 +5,5 @@
         android:id="@+id/option"
         android:title=""
         android:icon="@drawable/ic_more_vert_white_24dp"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>

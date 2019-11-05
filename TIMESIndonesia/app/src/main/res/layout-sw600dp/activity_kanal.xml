@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgapps">
@@ -11,6 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,26 +27,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/peristiwa"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/peristiwa"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -56,26 +59,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/politik"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/politik"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -84,26 +91,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/ekonomi"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/ekonomi"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -112,26 +123,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/gayahidup"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/gaya_hidup"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -140,26 +155,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/olahraga"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/olahraga"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -168,26 +187,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/pendidikan"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/pendidikan"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -196,26 +219,30 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/teknologi"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/ketahanan_informasi"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -224,26 +251,29 @@
                 android:layout_margin="@dimen/margin_12"
                 android:gravity="center_horizontal"
                 app:cardCornerRadius="@dimen/margin_12">
+
                 <RelativeLayout
                     android:id="@+id/layout_more"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
+
                     <ImageButton
                         android:id="@+id/btn_more"
                         android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@mipmap/wisata"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/more"
                         android:gravity="center_horizontal|center_vertical"
                         android:textColor="@color/white"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
         </GridLayout>

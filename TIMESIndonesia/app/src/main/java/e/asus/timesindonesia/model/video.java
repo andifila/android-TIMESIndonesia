@@ -12,7 +12,8 @@ public class video {
     public void setLink(String link) {
         this.link = link;
     }
-    public video(){
+
+    public video() {
 
     }
 
