@@ -7,17 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import e.asus.timesindonesia.R;
 import e.asus.timesindonesia.model.pencarian;
 
 public class CardViewNewsAdapter extends RecyclerView.Adapter<CardViewNewsAdapter.CardViewViewHolder> {
     private ArrayList<pencarian> listHero;
+
     public CardViewNewsAdapter(ArrayList<pencarian> list) {
         this.listHero = list;
     }
@@ -44,9 +44,11 @@ public class CardViewNewsAdapter extends RecyclerView.Adapter<CardViewNewsAdapte
     public int getItemCount() {
         return listHero.size();
     }
+
     class CardViewViewHolder extends RecyclerView.ViewHolder {
         TextView tvKategori, tvJudul, tvTgl;
         ImageView imgPhoto;
+
         CardViewViewHolder(View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);

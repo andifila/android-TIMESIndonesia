@@ -1,8 +1,7 @@
 package e.asus.timesindonesia;
 
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -11,7 +10,6 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 import e.asus.timesindonesia.adapter.CardViewFavAdapter;
-import e.asus.timesindonesia.adapter.CardViewNewsAdapter;
 import e.asus.timesindonesia.model.pencarian;
 import e.asus.timesindonesia.model.pencarianData;
 
@@ -42,14 +40,14 @@ public class FavoritActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected (MenuItem item){
-        if (item.getItemId()==android.R.id.home){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
             finish();
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private void showRecyclerCardView(){
+    private void showRecyclerCardView() {
         rvNews.setLayoutManager(new LinearLayoutManager(this));
         CardViewFavAdapter cardViewHeroAdapter = new CardViewFavAdapter(list);
         rvNews.setAdapter(cardViewHeroAdapter);

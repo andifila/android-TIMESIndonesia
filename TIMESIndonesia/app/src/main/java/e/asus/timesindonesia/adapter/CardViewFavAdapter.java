@@ -17,6 +17,7 @@ import e.asus.timesindonesia.model.pencarian;
 
 public class CardViewFavAdapter extends RecyclerView.Adapter<CardViewFavAdapter.CardViewViewHolder> {
     private ArrayList<pencarian> listHero;
+
     public CardViewFavAdapter(ArrayList<pencarian> list) {
         this.listHero = list;
     }
@@ -43,9 +44,11 @@ public class CardViewFavAdapter extends RecyclerView.Adapter<CardViewFavAdapter.
     public int getItemCount() {
         return listHero.size();
     }
+
     class CardViewViewHolder extends RecyclerView.ViewHolder {
         TextView tvKategori, tvJudul, tvTgl;
         ImageView imgPhoto;
+
         CardViewViewHolder(View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);

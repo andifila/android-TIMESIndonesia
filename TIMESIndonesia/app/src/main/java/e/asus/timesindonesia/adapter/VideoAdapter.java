@@ -2,7 +2,6 @@ package e.asus.timesindonesia.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.ArrayRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -32,7 +31,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     @NonNull
     @Override
     public VideoViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_video,viewGroup,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_video, viewGroup, false);
         return new VideoViewHolder(view);
     }
 
@@ -44,7 +43,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(context, FullScreenActivity.class);
-                i.putExtra("link",current.getLink());
+                i.putExtra("link", current.getLink());
 
             }
         });
@@ -58,10 +57,11 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     class VideoViewHolder extends RecyclerView.ViewHolder {
         WebView youtubeView;
         Button btnFullScreen;
-        VideoViewHolder(View itemView){
+
+        VideoViewHolder(View itemView) {
             super(itemView);
-            youtubeView=itemView.findViewById(R.id.wv_video);
-            btnFullScreen=itemView.findViewById(R.id.btn_fullscreen);
+            youtubeView = itemView.findViewById(R.id.wv_video);
+            btnFullScreen = itemView.findViewById(R.id.btn_fullscreen);
             youtubeView.setWebViewClient(new WebViewClient());
             youtubeView.setWebChromeClient(new WebChromeClient());
             youtubeView.getSettings().setJavaScriptEnabled(true);

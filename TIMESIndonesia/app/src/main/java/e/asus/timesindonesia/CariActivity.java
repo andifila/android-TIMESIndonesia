@@ -1,13 +1,11 @@
 package e.asus.timesindonesia;
 
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -18,7 +16,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -51,7 +48,7 @@ public class CariActivity extends Fragment {
         names.add("Gundala");
         names.add("Ponsel BM Bakal diblokir");
         names.add("Pasar Smartphone 2019");
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1,names);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, names);
         listView.setAdapter(adapter);
 
         et_cari = view.findViewById(R.id.et_cari);
@@ -63,8 +60,8 @@ public class CariActivity extends Fragment {
                 final int DRAWABLE_RIGHT = 2;
                 final int DRAWABLE_BOTTOM = 3;
 
-                if(event.getAction() == MotionEvent.ACTION_UP) {
-                    if(event.getRawX() >= (et_cari.getRight() - et_cari.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (event.getRawX() >= (et_cari.getRight() - et_cari.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
                         // your action here
                         et_cari.getText().clear();
                         return true;
@@ -73,9 +70,9 @@ public class CariActivity extends Fragment {
                 return false;
             }
         });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 et_cari.setText(names.get(i));
             }
         });
@@ -87,7 +84,7 @@ public class CariActivity extends Fragment {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.option:
                         bottomSheetDialog.show();
                         break;
@@ -97,14 +94,15 @@ public class CariActivity extends Fragment {
         });
         return view;
     }
-    private void showRecyclerCardView(){
+
+    private void showRecyclerCardView() {
         rvNews.setLayoutManager(new LinearLayoutManager(getActivity()));
         CardViewNewsAdapter cardViewHeroAdapter = new CardViewNewsAdapter(list);
         rvNews.setAdapter(cardViewHeroAdapter);
     }
 
-    private void createBottomSheetDialog(){
-        if(bottomSheetDialog==null){
+    private void createBottomSheetDialog() {
+        if (bottomSheetDialog == null) {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);

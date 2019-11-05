@@ -1,7 +1,6 @@
 package e.asus.timesindonesia;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,7 +17,7 @@ public class NewsDetailActivity extends AppCompatActivity {
     private ArrayList<pencarian> list = new ArrayList<>();
     RecyclerView rvBerita;
 
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
 
@@ -34,7 +33,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         showRecyclerCardView();
     }
 
-    private void showRecyclerCardView(){
+    private void showRecyclerCardView() {
 
         rvBerita.setLayoutManager(new LinearLayoutManager(this));
         CardViewNewsAdapter cardViewHeroAdapter = new CardViewNewsAdapter(list);

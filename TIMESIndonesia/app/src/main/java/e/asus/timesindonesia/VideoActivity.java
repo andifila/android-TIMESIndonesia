@@ -44,7 +44,7 @@ public class VideoActivity extends Fragment {
         vd = new video("https:/www.youtube.com/embed/5-oluDxppCU");
         arrayList.add(vd);
 
-        VideoAdapter videoAdapter = new VideoAdapter(arrayList,getActivity());
+        VideoAdapter videoAdapter = new VideoAdapter(arrayList, getActivity());
         rvVideo.setAdapter(videoAdapter);
 
         toolbar = view.findViewById(R.id.toolbar);
@@ -55,7 +55,7 @@ public class VideoActivity extends Fragment {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.option:
                         bottomSheetDialog.show();
                         break;
@@ -66,8 +66,9 @@ public class VideoActivity extends Fragment {
 
         return view;
     }
-    private void createBottomSheetDialog(){
-        if(bottomSheetDialog==null){
+
+    private void createBottomSheetDialog() {
+        if (bottomSheetDialog == null) {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
             set = view.findViewById(R.id.setting);
             fav = view.findViewById(R.id.fav);

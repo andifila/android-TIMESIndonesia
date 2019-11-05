@@ -1,8 +1,7 @@
 package e.asus.timesindonesia;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -15,7 +14,7 @@ public class FullScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen);
 
-        webView=findViewById(R.id.full_video);
+        webView = findViewById(R.id.full_video);
 
         String link = getIntent().getStringExtra("link");
         webView.loadUrl(link);
