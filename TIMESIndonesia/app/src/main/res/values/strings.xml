@@ -134,4 +134,20 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
         <item>https://tinyurl.com/w8avwwt</item>
         <item>https://tinyurl.com/w8avwwt</item>
     </string-array>
+
+    <string-array name="data_kanal">
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+    </string-array>
+
+    <string-array name="data_kanal_img">
+        <item>https://tinyurl.com/sqzfh6x</item>
+        <item>https://tinyurl.com/sqzfh6x</item>
+        <item>https://tinyurl.com/sqzfh6x</item>
+        <item>https://tinyurl.com/sqzfh6x</item>
+        <item>https://tinyurl.com/sqzfh6x</item>
+    </string-array>
 </resources>
