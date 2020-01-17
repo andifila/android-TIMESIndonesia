@@ -42,12 +42,6 @@
     <string name="ketahanan_informasi">KETAHANAN INFORMASI</string>
     <string name="more">MORE</string>
 
-    <string name="satu">1.</string>
-    <string name="dua">2.</string>
-    <string name="tiga">3.</string>
-    <string name="empat">4.</string>
-    <string name="lima">5.</string>
-
     <string name="views">29,24K Views</string>
 
     <string name="heading">Trending</string>
@@ -72,4 +66,72 @@ Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
 memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
 listrik ini diklaim sebagai moda transortasi masa depan terutama
 di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
+
+    <string-array name="data_kategori">
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+        <item>Peristiwa</item>
+    </string-array>
+
+    <string-array name="data_judul">
+        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+    </string-array>
+
+    <string-array name="data_isi">
+        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
+Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
+memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
+listrik ini diklaim sebagai moda transortasi masa depan terutama
+di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
+Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
+memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
+listrik ini diklaim sebagai moda transortasi masa depan terutama
+di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
+Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
+memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
+listrik ini diklaim sebagai moda transortasi masa depan terutama
+di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
+Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
+memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
+listrik ini diklaim sebagai moda transortasi masa depan terutama
+di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
+Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
+memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
+listrik ini diklaim sebagai moda transortasi masa depan terutama
+di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+    </string-array>
+
+    <string-array name="data_tanggal">
+        <item>Rabu, 31 Juli 2019</item>
+        <item>Rabu, 31 Juli 2019</item>
+        <item>Rabu, 31 Juli 2019</item>
+        <item>Rabu, 31 Juli 2019</item>
+        <item>Rabu, 31 Juli 2019</item>
+    </string-array>
+
+    <string-array name="data_nomer">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+        <item>5.</item>
+    </string-array>
+
+    <string-array name="data_img">
+        <item>https://tinyurl.com/w8avwwt</item>
+        <item>https://tinyurl.com/w8avwwt</item>
+        <item>https://tinyurl.com/w8avwwt</item>
+        <item>https://tinyurl.com/w8avwwt</item>
+        <item>https://tinyurl.com/w8avwwt</item>
+    </string-array>
 </resources>
