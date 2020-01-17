@@ -1,6 +1,7 @@
 package e.asus.timesindonesia;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
@@ -44,11 +45,14 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         btn_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bottomSheetDialog.show();
+//                bottomSheetDialog.show();
+                Uri uri;
+                Intent intent = new Intent(getActivity(), PencarianActivity.class);
+                startActivity(intent);
 
             }
         });
-        createBottomSheetDialog();
+//        createBottomSheetDialog();
 
         rvTrending = view.findViewById(R.id.rv_trending);
         rvTrending.setHasFixedSize(true);

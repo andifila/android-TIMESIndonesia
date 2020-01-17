@@ -28,7 +28,7 @@
             android:backgroundTint="#00FFFFFF"
             android:layout_centerInParent="true"
             android:layout_marginEnd="@dimen/margin_30"
-            app:srcCompat="@drawable/ic_more_vert_white_24dp" />
+            app:srcCompat="@drawable/ic_search_24dp" />
     </RelativeLayout>
 
     <ScrollView
