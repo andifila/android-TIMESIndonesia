@@ -19,7 +19,8 @@ public class trending implements Parcelable {
         this.isi = isi;
     }
 
-    public trending(){}
+    public trending() {
+    }
 
     protected trending(Parcel in) {
         judul = in.readString();

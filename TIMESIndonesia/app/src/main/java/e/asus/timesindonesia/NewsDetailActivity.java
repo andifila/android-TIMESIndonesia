@@ -45,7 +45,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         img = findViewById(R.id.img_berita);
         tgl = findViewById(R.id.txt_hari);
 
-        trending trending =getIntent().getParcelableExtra("detail");
+        trending trending = getIntent().getParcelableExtra("detail");
         judul.setText(trending.getJudul());
         isi.setText(trending.getIsi());
         tgl.setText(trending.getTgl());

@@ -11,7 +11,7 @@ import e.asus.timesindonesia.model.Kanal;
 
 public class KanalDetailActivity extends Fragment {
     private View view;
-    private  TextView textView;
+    private TextView textView;
     Kanal model;
 
     @Override

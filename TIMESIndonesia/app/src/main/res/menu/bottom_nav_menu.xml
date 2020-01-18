@@ -12,12 +12,12 @@
         android:title="@string/title_kanal" />
 
     <item
-        android:id="@+id/navigation_cari"
-        android:icon="@drawable/ic_search"
-        android:title="@string/title_cari" />
-
-    <item
         android:id="@+id/navigation_video"
         android:icon="@drawable/ic_videocam"
         android:title="@string/title_video" />
+
+    <item
+        android:id="@+id/navigation_pengaturan"
+        android:icon="@drawable/ic_settings"
+        android:title="Pengaturan" />
 </menu>

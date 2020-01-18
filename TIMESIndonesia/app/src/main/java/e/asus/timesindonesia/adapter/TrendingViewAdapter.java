@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import e.asus.timesindonesia.R;
-import e.asus.timesindonesia.model.pencarian;
 import e.asus.timesindonesia.model.trending;
 
 public class TrendingViewAdapter extends RecyclerView.Adapter<TrendingViewAdapter.CardViewViewHolder> {
@@ -23,9 +22,11 @@ public class TrendingViewAdapter extends RecyclerView.Adapter<TrendingViewAdapte
     private Context context;
 
     private OnItemClickCallback onItemClickCallback;
+
     public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
+
     public interface OnItemClickCallback {
         void onItemClicked(trending data);
     }

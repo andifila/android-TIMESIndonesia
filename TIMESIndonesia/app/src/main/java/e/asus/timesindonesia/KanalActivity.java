@@ -1,26 +1,17 @@
 package e.asus.timesindonesia;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import e.asus.timesindonesia.adapter.KanalAdapter;
-import e.asus.timesindonesia.adapter.TrendingViewAdapter;
 import e.asus.timesindonesia.model.Kanal;
-import e.asus.timesindonesia.model.trending;
 
 public class KanalActivity extends Fragment {
     View view;
@@ -40,7 +31,6 @@ public class KanalActivity extends Fragment {
         showRecyclerList();
 
         return view;
-
     }
 
     public ArrayList<Kanal> getListMovies() {
@@ -56,8 +46,8 @@ public class KanalActivity extends Fragment {
         return listMovie;
     }
 
-    private void showRecyclerList(){
-        rvKanal.setLayoutManager(new GridLayoutManager(getActivity(),2));
+    private void showRecyclerList() {
+        rvKanal.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         adapter = new KanalAdapter(kanals, getContext());
         rvKanal.setAdapter(adapter);
         adapter.setOnItemClickCallback(new KanalAdapter.OnItemClickCallback() {

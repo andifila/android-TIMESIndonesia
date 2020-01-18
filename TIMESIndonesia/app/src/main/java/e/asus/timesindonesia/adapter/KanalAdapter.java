@@ -15,7 +15,6 @@ import java.util.List;
 
 import e.asus.timesindonesia.R;
 import e.asus.timesindonesia.model.Kanal;
-import e.asus.timesindonesia.model.trending;
 
 public class KanalAdapter extends RecyclerView.Adapter<KanalAdapter.GridViewHolder> {
     private List<Kanal> listHero;
@@ -25,10 +24,13 @@ public class KanalAdapter extends RecyclerView.Adapter<KanalAdapter.GridViewHold
         this.listHero = list;
         this.context = context;
     }
+
     private KanalAdapter.OnItemClickCallback onItemClickCallback;
+
     public void setOnItemClickCallback(KanalAdapter.OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
+
     public interface OnItemClickCallback {
         void onItemClicked(Kanal data);
     }

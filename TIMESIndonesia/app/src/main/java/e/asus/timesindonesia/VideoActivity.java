@@ -21,7 +21,6 @@ public class VideoActivity extends Fragment {
     View view;
     RecyclerView rvVideo;
     ArrayList<video> arrayList;
-    Toolbar toolbar;
     LinearLayout set, fav;
     BottomSheetDialog bottomSheetDialog;
 
@@ -47,23 +46,7 @@ public class VideoActivity extends Fragment {
         VideoAdapter videoAdapter = new VideoAdapter(arrayList, getActivity());
         rvVideo.setAdapter(videoAdapter);
 
-        toolbar = view.findViewById(R.id.toolbar);
-        toolbar.inflateMenu(R.menu.custom_option_menu);
-        toolbar.setTitle("Video Terkini");
-
         createBottomSheetDialog();
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.option:
-                        bottomSheetDialog.show();
-                        break;
-                }
-                return false;
-            }
-        });
-
         return view;
     }
 

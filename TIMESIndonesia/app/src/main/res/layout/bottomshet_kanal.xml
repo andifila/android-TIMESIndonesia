@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottomsheet_kanal"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/layout_melengkung"
+    android:orientation="vertical"
     android:padding="@dimen/margin_10">
 
     <LinearLayout
@@ -25,11 +25,11 @@
             android:id="@+id/txt_kesehatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/kesehatan"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,11 +49,11 @@
             android:id="@+id/txt_foto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/foto"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
@@ -73,11 +73,11 @@
             android:id="@+id/txt_graphic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/graphic"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,11 +97,11 @@
             android:id="@+id/txt_opini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/opini"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
@@ -121,18 +121,18 @@
             android:id="@+id/txt_vlog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/vlog"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/glutnews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_15"
-        android:id="@+id/glutnews"
         android:gravity="center_horizontal|center_vertical">
 
         <ImageView
@@ -145,11 +145,11 @@
             android:id="@+id/txt_glutnews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/glutera"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 
     <LinearLayout
@@ -169,10 +169,10 @@
             android:id="@+id/txt_fav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:gravity="center_vertical"
             android:text="@string/IRI"
             android:textColor="@color/black"
-            android:textSize="@dimen/size_12"
-            android:gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_10" />
+            android:textSize="@dimen/size_12" />
     </LinearLayout>
 </LinearLayout>

@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -22,7 +19,6 @@ import e.asus.timesindonesia.adapter.TrendingViewAdapter;
 import e.asus.timesindonesia.model.trending;
 
 public class HomeActivity extends Fragment implements View.OnClickListener {
-    RelativeLayout relativeLayout;
     LinearLayout set, fav;
     BottomSheetDialog bottomSheetDialog;
     View view;
@@ -84,11 +80,11 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
                 startActivity(i);
                 bottomSheetDialog.dismiss();
                 break;
-            case R.id.setting:
-                Intent j = new Intent(getActivity(), SettingActivity.class);
-                startActivity(j);
-                bottomSheetDialog.dismiss();
-                break;
+//            case R.id.setting:
+//                Intent j = new Intent(getActivity(), SettingActivity.class);
+//                startActivity(j);
+//                bottomSheetDialog.dismiss();
+//                break;
         }
     }
 
@@ -113,7 +109,7 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         return listMovie;
     }
 
-    private void showRecyclerList(){
+    private void showRecyclerList() {
         rvTrending.setLayoutManager(new LinearLayoutManager(
                 getActivity()));
         adapter = new TrendingViewAdapter(trendings);
@@ -126,9 +122,10 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         });
 
     }
+
     private void showSelectedMovie(trending movie) {
         Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
-        intent.putExtra("detail",movie);
+        intent.putExtra("detail", movie);
         startActivity(intent);
     }
 }

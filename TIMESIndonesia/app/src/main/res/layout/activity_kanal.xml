@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
-    <LinearLayout
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24">
+
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
             android:text="Kanal"
             android:textColor="#000"
-            android:textStyle="bold"
             android:textSize="40sp"
-            android:layout_marginStart="@dimen/margin_15"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <View
-            android:layout_width="@dimen/margin_150"
-            android:layout_height="3dp"
-            android:layout_marginStart="@dimen/margin_15"
-            android:layout_marginTop="@dimen/margin_5"
-            android:background="@color/colorPrimary"/>
+            android:id="@+id/view"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_12"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_kanal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_kanal"
-            tools:listitem="@layout/item_kanal"/>
-    </LinearLayout>
-
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+    </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>

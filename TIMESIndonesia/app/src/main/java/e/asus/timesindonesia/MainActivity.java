@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.navigation_kanal:
                             selectedFragment = new KanalActivity();
                             break;
-                        case R.id.navigation_cari:
-                            selectedFragment = new CariActivity();
-                            break;
                         case R.id.navigation_video:
                             selectedFragment = new VideoActivity();
+                            break;
+                        case R.id.navigation_pengaturan:
+                            selectedFragment = new PengaturanActivity();
                             break;
                         default:
                             selectedFragment = new HomeActivity();

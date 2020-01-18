@@ -7,7 +7,8 @@ public class Kanal implements Parcelable {
     String gambar;
     String kanal;
 
-    public  Kanal(){}
+    public Kanal() {
+    }
 
     protected Kanal(Parcel in) {
         gambar = in.readString();
