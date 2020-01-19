@@ -43,8 +43,7 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <TableLayout
                 android:id="@+id/table"
@@ -159,290 +158,293 @@
                 </TableRow>
             </TableLayout>
 
-            <!--Trending-->
-            <TextView
-                android:id="@+id/tren"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="@dimen/margin_12"
-                android:text="@string/heading"
-                android:textColor="@color/black"
-                android:textSize="@dimen/size_18"
-                app:layout_constraintBottom_toTopOf="@+id/rv_trending"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/table" />
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_trending"
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginRight="@dimen/margin_16"
-                android:layout_marginBottom="@dimen/margin_16"
-                android:isScrollContainer="true"
-                android:nestedScrollingEnabled="false"
-                app:layout_constraintTop_toBottomOf="@+id/tren" />
-
-            <!--Video-->
-            <TextView
-                android:id="@+id/video"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:text="@string/heading2"
-                android:textColor="@color/black"
-                android:textSize="@dimen/size_18"
-                app:layout_constraintBottom_toTopOf="@+id/cv_video"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rv_trending" />
-            <android.support.v7.widget.CardView
-                android:id="@+id/cv_video"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginRight="@dimen/margin_16"
-                app:cardBackgroundColor="#00FFFFFF"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/video">
+                android:padding="@dimen/margin_24"
+                app:layout_constraintTop_toBottomOf="@+id/table">
 
-                <RelativeLayout
+                <!--Trending-->
+                <TextView
+                    android:id="@+id/tren"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/margin_2">
+                    android:text="@string/heading"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/margin_4"
-                            android:orientation="horizontal">
-
-                            <android.support.v7.widget.CardView
-                                android:layout_width="@dimen/margin_150"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
-                                android:layout_marginRight="@dimen/margin_8"
-                                app:cardCornerRadius="@dimen/margin_15">
-
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="@dimen/margin_8">
-
-                                    <ImageView
-                                        android:id="@+id/img_berita1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video" />
-
-                                    <TextView
-                                        android:id="@+id/vd_judul1"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/img_berita1"
-                                        android:text="@string/judul2"
-                                        android:textColor="@color/colorPrimary"
-                                        android:textSize="@dimen/size_14" />
-
-                                    <TextView
-                                        android:id="@+id/vd_isi1"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_judul1"
-                                        android:text="@string/isi2"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/size_12" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_isi1"
-                                        android:text="@string/tanggal"
-                                        android:textSize="@dimen/size_10" />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                android:layout_width="@dimen/margin_150"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
-                                android:layout_marginRight="@dimen/margin_8"
-                                app:cardCornerRadius="@dimen/margin_15">
-
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="@dimen/margin_8">
-
-                                    <ImageView
-                                        android:id="@+id/img_berita2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video" />
-
-                                    <TextView
-                                        android:id="@+id/vd_judul2"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/img_berita2"
-                                        android:text="@string/judul2"
-                                        android:textColor="@color/colorPrimary"
-                                        android:textSize="@dimen/size_14" />
-
-                                    <TextView
-                                        android:id="@+id/vd_isi2"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_judul2"
-                                        android:text="@string/isi2"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/size_12" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_isi2"
-                                        android:text="@string/tanggal"
-                                        android:textSize="@dimen/size_10" />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                android:layout_width="@dimen/margin_150"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
-                                android:layout_marginRight="@dimen/margin_8"
-                                app:cardCornerRadius="@dimen/margin_15">
-
-                                <RelativeLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="@dimen/margin_8">
-
-                                    <ImageView
-                                        android:id="@+id/img_berita3"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="@dimen/margin_80"
-                                        android:src="@drawable/video" />
-
-                                    <TextView
-                                        android:id="@+id/vd_judul3"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/img_berita3"
-                                        android:text="@string/judul2"
-                                        android:textColor="@color/colorPrimary"
-                                        android:textSize="@dimen/size_14" />
-
-                                    <TextView
-                                        android:id="@+id/vd_isi3"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_judul3"
-                                        android:text="@string/isi2"
-                                        android:textColor="@color/black"
-                                        android:textSize="@dimen/size_12" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vd_isi3"
-                                        android:text="@string/tanggal"
-                                        android:textSize="@dimen/size_10" />
-                                </RelativeLayout>
-                            </android.support.v7.widget.CardView>
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <!--Hari Ini-->
-            <TextView
-                android:id="@+id/today"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_16"
-                android:layout_marginBottom="@dimen/margin_12"
-                android:text="@string/heading3"
-                android:textColor="@color/black"
-                android:textSize="@dimen/size_18"
-                app:layout_constraintBottom_toTopOf="@+id/cd_hr_1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cv_video" />
-            <android.support.v7.widget.CardView
-                android:id="@+id/cd_hr_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginRight="@dimen/margin_16"
-                android:layout_marginBottom="@dimen/margin_16"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/today">
-
-                <android.support.constraint.ConstraintLayout
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_trending"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:isScrollContainer="true"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tren" />
+
+                <!--Video-->
+                <TextView
+                    android:id="@+id/video"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/margin_2">
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:text="@string/heading2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    app:layout_constraintBottom_toTopOf="@+id/cv_video"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_trending" />
 
-                    <ImageView
-                        android:id="@+id/img_today1"
-                        android:layout_width="90dp"
-                        android:layout_height="60dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/berita"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_16"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/video">
 
-                    <TextView
-                        android:id="@+id/td_judul"
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_12"
-                        android:text="@string/judul"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/img_today1"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:padding="@dimen/margin_8">
 
-                    <TextView
-                        android:id="@+id/td_isi"
-                        android:layout_width="250dp"
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_4"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="@dimen/margin_150"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_8"
+                                    android:layout_marginRight="@dimen/margin_8"
+                                    android:layout_marginBottom="@dimen/margin_8"
+                                    app:cardCornerRadius="@dimen/margin_15">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/margin_8">
+
+                                        <ImageView
+                                            android:id="@+id/img_berita1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/margin_80"
+                                            android:src="@drawable/video" />
+
+                                        <TextView
+                                            android:id="@+id/vd_judul1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_berita1"
+                                            android:text="@string/judul2"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/size_14" />
+
+                                        <TextView
+                                            android:id="@+id/vd_isi1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_judul1"
+                                            android:text="@string/isi2"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/size_12" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_isi1"
+                                            android:text="@string/tanggal"
+                                            android:textSize="@dimen/size_10" />
+                                    </RelativeLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="@dimen/margin_150"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_8"
+                                    android:layout_marginRight="@dimen/margin_8"
+                                    app:cardCornerRadius="@dimen/margin_15">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/margin_8">
+
+                                        <ImageView
+                                            android:id="@+id/img_berita2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/margin_80"
+                                            android:src="@drawable/video" />
+
+                                        <TextView
+                                            android:id="@+id/vd_judul2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_berita2"
+                                            android:text="@string/judul2"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/size_14" />
+
+                                        <TextView
+                                            android:id="@+id/vd_isi2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_judul2"
+                                            android:text="@string/isi2"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/size_12" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_isi2"
+                                            android:text="@string/tanggal"
+                                            android:textSize="@dimen/size_10" />
+                                    </RelativeLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="@dimen/margin_150"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_8"
+                                    android:layout_marginRight="@dimen/margin_8"
+                                    app:cardCornerRadius="@dimen/margin_15">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/margin_8">
+
+                                        <ImageView
+                                            android:id="@+id/img_berita3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/margin_80"
+                                            android:src="@drawable/video" />
+
+                                        <TextView
+                                            android:id="@+id/vd_judul3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_berita3"
+                                            android:text="@string/judul2"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/size_14" />
+
+                                        <TextView
+                                            android:id="@+id/vd_isi3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_judul3"
+                                            android:text="@string/isi2"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/size_12" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/vd_isi3"
+                                            android:text="@string/tanggal"
+                                            android:textSize="@dimen/size_10" />
+                                    </RelativeLayout>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Hari Ini-->
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:text="@string/heading3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+                    app:layout_constraintBottom_toTopOf="@+id/cd_hr_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_video" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_hr_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_4"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/today">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_12"
-                        android:ellipsize="end"
-                        android:maxLines="3"
-                        android:text="@string/isi"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/size_12"
-                        app:layout_constraintStart_toEndOf="@+id/img_today1"
-                        app:layout_constraintTop_toBottomOf="@+id/td_judul" />
+                        android:padding="@dimen/margin_2">
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_12"
-                        android:ellipsize="end"
-                        android:text="@string/tanggal"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/size_10"
-                        app:layout_constraintStart_toEndOf="@+id/img_today1"
-                        app:layout_constraintTop_toBottomOf="@+id/td_isi" />
-                </android.support.constraint.ConstraintLayout>
-            </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:id="@+id/img_today1"
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/berita"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
+                        <TextView
+                            android:id="@+id/td_judul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_12"
+                            android:text="@string/judul"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/img_today1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/td_isi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_12"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:text="@string/isi"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_12"
+                            app:layout_constraintStart_toEndOf="@+id/img_today1"
+                            app:layout_constraintTop_toBottomOf="@+id/td_judul" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_12"
+                            android:ellipsize="end"
+                            android:text="@string/tanggal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_10"
+                            app:layout_constraintStart_toEndOf="@+id/img_today1"
+                            app:layout_constraintTop_toBottomOf="@+id/td_isi" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

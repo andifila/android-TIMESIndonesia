@@ -8,17 +8,15 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/margin_24"
-        android:layout_marginEnd="@dimen/margin_24">
+        android:padding="@dimen/margin_24">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_24"
             android:text="Pengaturan"
             android:textColor="#000"
-            android:textSize="40sp"
+            android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +80,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_28"
             android:text="@string/fb"
             android:textColor="@color/black"
             android:textSize="@dimen/size_14"
@@ -94,7 +91,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_14"
             android:text="@string/twit"
             android:textColor="@color/black"
             android:textSize="@dimen/size_14"

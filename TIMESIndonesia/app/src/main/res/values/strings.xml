@@ -80,6 +80,34 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
         <item>Peristiwa</item>
     </string-array>
 
+    <string-array name="data_fokus">
+        <item># OTT Komisioner KPU</item>
+        <item># OTT KPK di Sidoarjo</item>
+        <item># Anugerah TIMES Indonesia 2019</item>
+        <item># Ledakan di Monas</item>
+        <item># Ahok Menuju Bos Pertamina</item>
+        <item># Lowongan CPNS 2019</item>
+        <item># Kongres PSSI 2019</item>
+        <item># Berita Panglima TNI Hari ini</item>
+        <item># Sumpah Pemuda Milenial</item>
+        <item># Wakil Menteri Indonesia Maju</item>
+    </string-array>
+
+    <string-array name="data_polling">
+        <item>Jika Pilkada Kabupaten Musi Rawas 2020 digelar hari ini, siapa pilihan anda?</item>
+        <item>Jika Pilbup Gunung Kidul 2020 berlangsung hari ini, siapa pilihan anda?</item>
+        <item>Jika Pilbup Sleman 2020 berlangsung hari ini, siapa pilihan anda?</item>
+        <item>Jika Pilbup Bantul 2020 berlangsung hari ini, siapa pilihan anda?</item>
+        <item>Jika Calon Bupati Banyuwangi 2020 pilihan anda hayoo?</item>
+    </string-array>
+
+    <string-array name="data_polling2">
+        <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
+        <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
+        <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
+        <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
+    </string-array>
+
     <string-array name="data_judul">
         <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
         <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>

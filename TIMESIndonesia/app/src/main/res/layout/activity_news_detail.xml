@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,18 +24,16 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_24">
 
             <TextView
                 android:id="@+id/txt_judul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_16"
-                android:layout_marginRight="@dimen/margin_24"
                 android:text="@string/isi"
                 android:textColor="@color/black"
-                android:textSize="@dimen/size_16"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -45,10 +42,10 @@
                 android:id="@+id/txt_hari"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4"
                 android:layout_below="@+id/txt_judul"
-                android:layout_marginLeft="@dimen/margin_24"
                 android:text="@string/tanggal"
-                android:textSize="@dimen/size_14"
+                android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_judul" />
 
@@ -61,7 +58,7 @@
                 android:drawableStart="@drawable/eye2"
                 android:drawablePadding="@dimen/margin_5"
                 android:text="@string/views"
-                android:textSize="@dimen/size_14"
+                android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toEndOf="@+id/txt_hari"
                 app:layout_constraintTop_toTopOf="@+id/txt_hari" />
 
@@ -70,9 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/margin_200"
                 android:layout_below="@id/txt_hari"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
-                android:layout_marginRight="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_16"
                 android:layout_marginBottom="@dimen/margin_10"
                 android:src="@drawable/berita"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,12 +78,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img_berita"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
-                android:layout_marginRight="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_16"
                 android:justificationMode="inter_word"
                 android:text="@string/isi_berita"
                 android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_berita" />
 
@@ -97,12 +91,11 @@
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:layout_below="@id/txt_isi_berita"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_16"
                 android:background="@color/gray"
                 android:gravity="center"
                 android:text="@string/politik"
-                android:textSize="@dimen/margin_12"
+                android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_isi_berita" />
 
@@ -111,13 +104,13 @@
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:layout_below="@id/txt_isi_berita"
-                android:layout_marginLeft="@dimen/margin_8"
-                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
                 android:layout_toRightOf="@id/btn_1"
                 android:background="@color/gray"
                 android:gravity="center"
                 android:text="@string/peristiwa"
-                android:textSize="@dimen/margin_12"
+                android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toEndOf="@+id/btn_1"
                 app:layout_constraintTop_toBottomOf="@+id/txt_isi_berita" />
 
@@ -126,11 +119,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btn_1"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_24"
                 android:text="@string/berita_terkait"
                 android:textColor="@color/black"
-                android:textSize="@dimen/size_14"
+                android:textSize="@dimen/size_18"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_1" />
 
@@ -138,9 +130,7 @@
                 android:id="@+id/rv_berita"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginRight="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_16"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_berita_terkait" />
@@ -149,11 +139,10 @@
                 android:id="@+id/txt_video_terkait"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_12"
-                android:text="@string/berita_terkait"
+                android:layout_marginTop="@dimen/margin_24"
+                android:text="@string/video_terkait"
                 android:textColor="@color/black"
-                android:textSize="@dimen/size_14"
+                android:textSize="@dimen/size_18"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rv_berita" />
 
@@ -161,8 +150,7 @@
                 android:id="@+id/cv_video"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/margin_16"
-                android:layout_marginBottom="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
                 app:cardBackgroundColor="#00FFFFFF"
                 app:cardCornerRadius="0dp"
                 app:cardElevation="0dp"

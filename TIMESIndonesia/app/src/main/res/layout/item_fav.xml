@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="@dimen/margin_4"
+    android:layout_marginBottom="@dimen/margin_16"
     card_view:cardCornerRadius="15dp">
 
     <RelativeLayout
@@ -32,7 +32,7 @@
             android:layout_toEndOf="@id/img_item_photo"
             android:layout_toRightOf="@id/img_item_photo"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/size_16"
+            android:textSize="@dimen/size_14"
             android:textStyle="bold"
             tools:text="Kategori" />
 
@@ -45,6 +45,7 @@
             android:layout_toEndOf="@id/img_item_photo"
             android:layout_toRightOf="@id/img_item_photo"
             android:maxLines="2"
+            android:textSize="@dimen/size_12"
             android:textColor="@color/black"
             tools:text="Judul" />
 
@@ -57,7 +58,6 @@
             android:layout_toEndOf="@id/img_item_photo"
             android:layout_toRightOf="@id/img_item_photo"
             android:ellipsize="end"
-            android:textColor="@color/black"
             android:textSize="@dimen/size_10"
             tools:text="Judul" />
 
