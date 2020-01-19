@@ -25,7 +25,7 @@ public class KanalDetailActivity extends Fragment {
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.kanal_detail, container, false);
+        view = inflater.inflate(R.layout.activity_kanal_detail, container, false);
 
         textView = view.findViewById(R.id.kanal);
 
