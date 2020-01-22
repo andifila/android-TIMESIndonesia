@@ -3,7 +3,6 @@ package e.asus.timesindonesia;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,9 +19,7 @@ import e.asus.timesindonesia.adapter.TrendingViewAdapter;
 import e.asus.timesindonesia.model.Berita;
 import e.asus.timesindonesia.model.trending;
 
-public class HomeActivity extends Fragment implements View.OnClickListener {
-    LinearLayout set, fav;
-    BottomSheetDialog bottomSheetDialog;
+public class HomeActivity extends Fragment {
     View view;
 
     private TrendingViewAdapter adapter;
@@ -114,35 +110,6 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    private void createBottomSheetDialog() {
-        if (bottomSheetDialog == null) {
-            View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
-            view.setBackgroundResource(R.drawable.layout_melengkung);
-            set = view.findViewById(R.id.setting);
-            fav = view.findViewById(R.id.fav);
-            set.setOnClickListener(this);
-            fav.setOnClickListener(this);
-            bottomSheetDialog = new BottomSheetDialog(getActivity());
-            bottomSheetDialog.setContentView(view);
-        }
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fav:
-                Intent i = new Intent(getActivity(), FavoritActivity.class);
-                startActivity(i);
-                bottomSheetDialog.dismiss();
-                break;
-//            case R.id.setting:
-//                Intent j = new Intent(getActivity(), SettingActivity.class);
-//                startActivity(j);
-//                bottomSheetDialog.dismiss();
-//                break;
-        }
-    }
-
     public ArrayList<trending> getListMovies() {
         dataJudul = getResources().getStringArray(R.array.data_judul);
         dataDate = getResources().getStringArray(R.array.data_tanggal);
@@ -212,7 +179,7 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
             @Override
             public void onItemClicked(Berita data) {
 //                showSelectedBerita(data);
-                Toast.makeText(getContext(),"Anda memilih "+data.getJudul(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Anda memilih " + data.getJudul(), Toast.LENGTH_SHORT).show();
             }
         });
 

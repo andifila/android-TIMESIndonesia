@@ -16,7 +16,6 @@ import java.util.List;
 
 import e.asus.timesindonesia.R;
 import e.asus.timesindonesia.model.Berita;
-import e.asus.timesindonesia.model.trending;
 
 public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.CardViewViewHolder> {
     private List<Berita> listHero;

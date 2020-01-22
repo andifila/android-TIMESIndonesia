@@ -1,28 +1,19 @@
 package e.asus.timesindonesia;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import e.asus.timesindonesia.adapter.FokusAdapter;
-import e.asus.timesindonesia.adapter.KanalAdapter;
 import e.asus.timesindonesia.model.Fokus;
-import e.asus.timesindonesia.model.Kanal;
 
 public class FokusActivity extends Fragment {
     private View view;
@@ -73,7 +64,7 @@ public class FokusActivity extends Fragment {
         adapter.setOnItemClickCallback(new FokusAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Fokus data) {
-                Toast.makeText(getContext(), "Anda memilih "+data.getFokus(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Anda memilih " + data.getFokus(), Toast.LENGTH_SHORT).show();
             }
         });
 

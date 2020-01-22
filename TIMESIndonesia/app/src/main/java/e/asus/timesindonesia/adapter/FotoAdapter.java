@@ -14,7 +14,6 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import e.asus.timesindonesia.R;
-import e.asus.timesindonesia.model.Fokus;
 import e.asus.timesindonesia.model.Foto;
 
 public class FotoAdapter extends RecyclerView.Adapter<FotoAdapter.ListViewHolder> {

@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import e.asus.timesindonesia.R;
-import e.asus.timesindonesia.model.Fokus;
 import e.asus.timesindonesia.model.Polling;
 
 public class PollingAdapter extends RecyclerView.Adapter<PollingAdapter.ListViewHolder> {

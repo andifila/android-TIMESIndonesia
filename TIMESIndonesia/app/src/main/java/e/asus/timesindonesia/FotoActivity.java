@@ -1,8 +1,7 @@
 package e.asus.timesindonesia;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
@@ -11,12 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import java.io.File;
 import java.util.ArrayList;
 
-import e.asus.timesindonesia.adapter.FokusAdapter;
 import e.asus.timesindonesia.adapter.FotoAdapter;
-import e.asus.timesindonesia.model.Fokus;
 import e.asus.timesindonesia.model.Foto;
 
 public class FotoActivity extends Fragment {
@@ -71,7 +67,7 @@ public class FotoActivity extends Fragment {
         adapter.setOnItemClickCallback(new FotoAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Foto data) {
-                Toast.makeText(getContext(), "Anda memilih "+data.getTitle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Anda memilih " + data.getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
 

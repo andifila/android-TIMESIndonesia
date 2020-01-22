@@ -42,8 +42,8 @@
                 android:id="@+id/txt_hari"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4"
                 android:layout_below="@+id/txt_judul"
+                android:layout_marginTop="@dimen/margin_4"
                 android:text="@string/tanggal"
                 android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
                 android:layout_below="@id/txt_judul"
                 android:layout_marginLeft="@dimen/margin_16"
                 android:layout_toEndOf="@id/txt_hari"
-                android:drawableStart="@drawable/eye2"
+                android:drawableStart="@drawable/ic_remove_red_eye"
                 android:drawablePadding="@dimen/margin_5"
                 android:text="@string/views"
                 android:textSize="@dimen/size_12"
@@ -151,6 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="24dp"
                 app:cardBackgroundColor="#00FFFFFF"
                 app:cardCornerRadius="0dp"
                 app:cardElevation="0dp"
@@ -160,7 +161,8 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8">
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -175,8 +177,8 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
                                 android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout
@@ -220,8 +222,8 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
                                 android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout
@@ -265,8 +267,7 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
-                                android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout
@@ -306,6 +307,7 @@
                                         android:textSize="@dimen/size_10" />
                                 </RelativeLayout>
                             </android.support.v7.widget.CardView>
+
                         </LinearLayout>
                     </HorizontalScrollView>
                 </RelativeLayout>

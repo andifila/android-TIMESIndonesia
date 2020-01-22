@@ -1,8 +1,7 @@
 package e.asus.timesindonesia;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
@@ -13,13 +12,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import e.asus.timesindonesia.adapter.CardViewNewsAdapter;
-import e.asus.timesindonesia.adapter.FotoAdapter;
 import e.asus.timesindonesia.adapter.PollingAdapter;
-import e.asus.timesindonesia.model.Foto;
 import e.asus.timesindonesia.model.Polling;
-import e.asus.timesindonesia.model.pencarian;
-import e.asus.timesindonesia.model.pencarianData;
 
 public class PollingActivity extends Fragment {
 
@@ -74,7 +68,7 @@ public class PollingActivity extends Fragment {
         adapter.setOnItemClickCallback(new PollingAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Polling data) {
-                Toast.makeText(getContext(), "Anda memilih "+data.getTitle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Anda memilih " + data.getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
 

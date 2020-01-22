@@ -12,7 +12,6 @@ import java.util.List;
 
 import e.asus.timesindonesia.R;
 import e.asus.timesindonesia.model.Fokus;
-import e.asus.timesindonesia.model.Kanal;
 
 public class FokusAdapter extends RecyclerView.Adapter<FokusAdapter.ListViewHolder> {
     private List<Fokus> listHero;

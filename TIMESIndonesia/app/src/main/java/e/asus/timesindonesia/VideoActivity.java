@@ -5,9 +5,7 @@ import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -46,18 +44,6 @@ public class VideoActivity extends Fragment {
         VideoAdapter videoAdapter = new VideoAdapter(arrayList, getActivity());
         rvVideo.setAdapter(videoAdapter);
 
-        createBottomSheetDialog();
         return view;
     }
-
-    private void createBottomSheetDialog() {
-        if (bottomSheetDialog == null) {
-            View view = LayoutInflater.from(getActivity()).inflate(R.layout.modal_top, null);
-            set = view.findViewById(R.id.setting);
-            fav = view.findViewById(R.id.fav);
-            bottomSheetDialog = new BottomSheetDialog(getActivity());
-            bottomSheetDialog.setContentView(view);
-        }
-    }
-
 }

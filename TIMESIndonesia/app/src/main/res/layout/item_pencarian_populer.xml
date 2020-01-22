@@ -8,8 +8,8 @@
         android:id="@+id/txt_item_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_4"
         android:text="Pencarian"
-        android:textSize="@dimen/size_16"
+        android:textSize="@dimen/size_12"
         android:textStyle="bold" />
 </LinearLayout>

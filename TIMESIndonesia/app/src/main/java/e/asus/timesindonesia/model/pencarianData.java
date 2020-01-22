@@ -9,8 +9,6 @@ public class pencarianData {
             {"Peristiwa", "KPK RI Periksa Miryam S Haryani Sebagai Saksi Tersangka Tannos", "Rabu, 31 Juli 2019", "https://tinyurl.com/yxekaps4"},
             {"Peristiwa", "KPK RI Periksa Miryam S Haryani Sebagai Saksi Tersangka Tannos", "Rabu, 31 Juli 2019", "https://tinyurl.com/yxekaps4"},
             {"Peristiwa", "KPK RI Periksa Miryam S Haryani Sebagai Saksi Tersangka Tannos", "Rabu, 31 Juli 2019", "https://tinyurl.com/yxekaps4"},
-
-
     };
 
     public static ArrayList<pencarian> getListData() {

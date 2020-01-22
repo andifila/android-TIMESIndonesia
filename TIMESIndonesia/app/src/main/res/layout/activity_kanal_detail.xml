@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kanal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/kanal"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -16,20 +16,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextColor="@color/white">
+
         <ImageButton
+            android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_back"
-            android:src="@drawable/left_arrow"
-            android:backgroundTint="#00FFFFFF"/>
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
         <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/title"
-            android:text="d"
+            android:paddingStart="@dimen/margin_15"
             android:textColor="@color/white"
-            android:textSize="25sp"
-            android:paddingStart="@dimen/margin_15"/>
+            android:textSize="25sp" />
     </android.support.v7.widget.Toolbar>
 
     <android.support.v4.widget.NestedScrollView
@@ -78,9 +79,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#00FFFFFF"
                 app:cardCornerRadius="0dp"
                 app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_video_terkait">
 
@@ -101,8 +104,8 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
                                 android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout
@@ -146,8 +149,8 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
                                 android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout
@@ -191,8 +194,7 @@
                             <android.support.v7.widget.CardView
                                 android:layout_width="@dimen/margin_150"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/margin_8"
-                                android:layout_marginRight="@dimen/margin_8"
+                                android:layout_marginBottom="@dimen/margin_8"
                                 app:cardCornerRadius="@dimen/margin_15">
 
                                 <RelativeLayout

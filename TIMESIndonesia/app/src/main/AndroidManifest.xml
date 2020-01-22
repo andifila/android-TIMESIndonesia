@@ -40,9 +40,6 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".FavoritActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".FullScreenActivity"
             android:screenOrientation="portrait" />
     </application>
