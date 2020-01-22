@@ -101,7 +101,8 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
         <item>Jika Calon Bupati Banyuwangi 2020 pilihan anda hayoo?</item>
     </string-array>
 
-    <string-array name="data_polling2">
+    <string-array name="data_polling_tgl">
+        <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
         <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
         <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
         <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
@@ -181,12 +182,12 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
 
     <string-array name="data_kanal_img">
         <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
-        <item>https://tinyurl.com/sqzfh6x</item>
+        <item>https://tinyurl.com/skz5wv8</item>
+        <item>https://tinyurl.com/wvqygs8</item>
+        <item>https://tinyurl.com/wmna3kw</item>
+        <item>https://tinyurl.com/s6hy3h6</item>
+        <item>https://tinyurl.com/rwnes2g</item>
+        <item>https://tinyurl.com/utceh26</item>
+        <item>https://tinyurl.com/tf6x75g</item>
     </string-array>
 </resources>

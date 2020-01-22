@@ -12,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import e.asus.timesindonesia.adapter.BeritaAdapter;
 import e.asus.timesindonesia.adapter.TrendingViewAdapter;
+import e.asus.timesindonesia.model.Berita;
 import e.asus.timesindonesia.model.trending;
 
 public class HomeActivity extends Fragment implements View.OnClickListener {
@@ -24,6 +27,7 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     View view;
 
     private TrendingViewAdapter adapter;
+    private BeritaAdapter beritaAdapter;
     private String[] dataJudul;
     private String[] dataDate;
     private String[] dataKategori;
@@ -31,8 +35,9 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     private String[] dataNomer;
     private String[] dataImg;
     private ArrayList<trending> trendings = new ArrayList<>();
-    private RecyclerView rvTrending;
-    private LinearLayoutManager linearLayoutManager;
+    private ArrayList<Berita> beritas = new ArrayList<>();
+    private RecyclerView rvTrending, rvBerita;
+    private ImageButton btn_fokus, btn_foto, btn_headline, btn_populer, btn_polling;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,6 +60,56 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
 //        rvTrending.setNestedScrollingEnabled(false);
         trendings.addAll(getListMovies());
         showRecyclerList();
+
+        rvBerita = view.findViewById(R.id.rv_berita);
+        rvBerita.setHasFixedSize(true);
+        beritas.addAll(getListBerita());
+        showRecyclerBerita();
+
+        btn_headline = view.findViewById(R.id.btnHeadline);
+        btn_headline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HeadineActivity headineActivity = new HeadineActivity();
+                getFragmentManager().beginTransaction().replace(R.id.framelayout, headineActivity).commit();
+            }
+        });
+
+        btn_populer = view.findViewById(R.id.btnPopuler);
+        btn_populer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TerpopulerActivity terpopulerActivity = new TerpopulerActivity();
+                getFragmentManager().beginTransaction().replace(R.id.framelayout, terpopulerActivity).commit();
+            }
+        });
+
+        btn_fokus = view.findViewById(R.id.btnFokus);
+        btn_fokus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FokusActivity fokusActivity = new FokusActivity();
+                getFragmentManager().beginTransaction().replace(R.id.framelayout, fokusActivity).commit();
+            }
+        });
+
+        btn_foto = view.findViewById(R.id.btnFoto);
+        btn_foto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FotoActivity fotoActivity = new FotoActivity();
+                getFragmentManager().beginTransaction().replace(R.id.framelayout, fotoActivity).commit();
+            }
+        });
+
+        btn_polling = view.findViewById(R.id.btnIndeks);
+        btn_polling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PollingActivity pollingActivity = new PollingActivity();
+                getFragmentManager().beginTransaction().replace(R.id.framelayout, pollingActivity).commit();
+            }
+        });
 
         return view;
     }
@@ -124,6 +179,46 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     }
 
     private void showSelectedMovie(trending movie) {
+        Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
+        intent.putExtra("detail", movie);
+        startActivity(intent);
+    }
+
+    public ArrayList<Berita> getListBerita() {
+        dataJudul = getResources().getStringArray(R.array.data_judul);
+        dataDate = getResources().getStringArray(R.array.data_tanggal);
+        dataKategori = getResources().getStringArray(R.array.data_kategori);
+        dataImg = getResources().getStringArray(R.array.data_img);
+        dataIsi = getResources().getStringArray(R.array.data_isi);
+        ArrayList<Berita> listMovie = new ArrayList<>();
+        for (int i = 0; i < dataJudul.length; i++) {
+            Berita movie = new Berita();
+            movie.setJudul(dataJudul[i]);
+            movie.setTgl(dataDate[i]);
+            movie.setKategori(dataKategori[i]);
+            movie.setGmbr(dataImg[i]);
+            movie.setIsi(dataIsi[i]);
+            listMovie.add(movie);
+        }
+        return listMovie;
+    }
+
+    private void showRecyclerBerita() {
+        rvBerita.setLayoutManager(new LinearLayoutManager(
+                getActivity()));
+        beritaAdapter = new BeritaAdapter(beritas);
+        rvBerita.setAdapter(beritaAdapter);
+        beritaAdapter.setOnItemClickCallback(new BeritaAdapter.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(Berita data) {
+//                showSelectedBerita(data);
+                Toast.makeText(getContext(),"Anda memilih "+data.getJudul(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+    private void showSelectedBerita(Berita movie) {
         Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
         intent.putExtra("detail", movie);
         startActivity(intent);

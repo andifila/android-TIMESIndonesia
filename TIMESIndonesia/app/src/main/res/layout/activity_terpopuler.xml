@@ -43,44 +43,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
-            <android.support.constraint.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_2">
 
-                <ImageView
-                    android:id="@+id/img_berita"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/margin_200"
-                    android:src="@drawable/berita"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/txt_isi_berita"
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_populer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_12"
-                    android:justificationMode="inter_word"
-                    android:text="@string/isi"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/size_14"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/img_berita" />
-
-                <TextView
-                    android:id="@+id/txt_desc_berita"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:justificationMode="inter_word"
-                    android:text="@string/isi"
-                    android:textSize="@dimen/size_12"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_isi_berita" />
-            </android.support.constraint.ConstraintLayout>
+                    android:layout_marginTop="16dp"
+                    />
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
         <TextView
