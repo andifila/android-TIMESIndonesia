@@ -74,10 +74,10 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
 
     <string-array name="data_kategori">
         <item>Peristiwa</item>
-        <item>Peristiwa</item>
-        <item>Peristiwa</item>
-        <item>Peristiwa</item>
-        <item>Peristiwa</item>
+        <item>Kesehatan</item>
+        <item>Pemerintahan</item>
+        <item>Gaya Hidup</item>
+        <item>Politik</item>
     </string-array>
 
     <string-array name="data_fokus">
@@ -111,10 +111,10 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
 
     <string-array name="data_judul">
         <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
-        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
-        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
-        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
-        <item>Usai Ditetapkan Sebagai Tersangka, KPK RI Geledah Ruang Sekda Jawa Barat</item>
+        <item>Waspadai, 3 Makanan Ini Tingkatkan Risiko Kanker Otak</item>
+        <item>Wagub NTB Sitti Rohmi Djalilah Buka Lombok Sumbawa Great Sale 2020</item>
+        <item>Menu Sarapan Agar Lebih Semangat di Hari Minggu</item>
+        <item>KPU Papua Barat: Dengan Sinergi Semua Elemen akan Sukseskan Pilkada Raja Ampat 2020</item>
     </string-array>
 
     <string-array name="data_isi">
@@ -122,35 +122,30 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
 Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
 memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
 listrik ini diklaim sebagai moda transortasi masa depan terutama
-di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
-        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
-Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
-memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
-listrik ini diklaim sebagai moda transortasi masa depan terutama
-di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
-        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
-Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
-memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
-listrik ini diklaim sebagai moda transortasi masa depan terutama
-di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
-        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
-Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
-memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
-listrik ini diklaim sebagai moda transortasi masa depan terutama
-di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
-        <item>TIMESINDONESIA, JAKARTA - Dua bus listrik buatan PT. Bakrie dan
-Brothers Tbk (BNRB) dan PT Mobil Anak Bangsa (MAB) tengah
-memasuki uji coba selama 6 bulan kedepan. Keberadaan bus
-listrik ini diklaim sebagai moda transortasi masa depan terutama
-di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
+di Indonesia dengan mesin yang dirancang ramah lingkungan...</item>
+        <item>TIMESINDONESIA, JAKARTA – Kanker otak adalah penyakit yang cukup mengerikan. Kondisi
+            ini terjadi saat sel-sel di otak mengalami pertumbuhan berlebih yang membentuk massa
+            yang disebut tumor. Menurut perkiraan dari American Cancer Society, peluang seseorang
+            mengalami kanker otak di bawah satu persen...</item>
+        <item>TIMESINDONESIA, MATARAM – Wagub NTB Sitti Rohmi Djalilah meresmikan kegiatan wisata
+            Lombok Sumbawa Great Sale 2020 di Atrium Lombok Epicentrum Mall, Kota Mataram,
+            Sabtu (25/1/2020) malam...</item>
+        <item>TIMESINDONESIA, JAKARTA – Hari Minggu bagi sebagian orang adalah hari untuk bermalas-malasan
+            karena libur kerja. Namun bagi sebagian yang lain, hari Minggu adalah hari untuk
+            bersenang-senang. Jika Anda ingin menikmati hari Minggu dengan berjalan-jalan atau
+            melakukan hal lain, jangan lupa untuk sarapan sebelum memulai aktivitas. Menu sarapan apa
+            yang bisa membuat Anda lebih bersemangat?</item>
+        <item>TIMESINDONESIA, RAYA AMPAT – Komisi Pemilihan Umum Provinsi Papua Barat (KPU Papua Barat)
+            menegaskan semua elemen harus membangun sinergi untuk menyukseskan penyelenggaraan pesta
+            demokrasi Pemilukada Raja Ampat Tahun 2020 (Pilkada Raja Ampat 2020)...</item>
     </string-array>
 
     <string-array name="data_tanggal">
         <item>Rabu, 31 Juli 2019</item>
-        <item>Rabu, 31 Juli 2019</item>
-        <item>Rabu, 31 Juli 2019</item>
-        <item>Rabu, 31 Juli 2019</item>
-        <item>Rabu, 31 Juli 2019</item>
+        <item>Minggu, 26 Januari 2020</item>
+        <item>Minggu, 26 Januari 2020</item>
+        <item>Minggu, 26 Januari 2020</item>
+        <item>Jum\'at, 24 Januari 2020</item>
     </string-array>
 
     <string-array name="data_nomer">
@@ -163,10 +158,10 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</item>
 
     <string-array name="data_img">
         <item>https://tinyurl.com/w8avwwt</item>
-        <item>https://tinyurl.com/w8avwwt</item>
-        <item>https://tinyurl.com/w8avwwt</item>
-        <item>https://tinyurl.com/w8avwwt</item>
-        <item>https://tinyurl.com/w8avwwt</item>
+        <item>https://tinyurl.com/r9l8l6z</item>
+        <item>https://tinyurl.com/w6w3jtl</item>
+        <item>https://tinyurl.com/r8gf93x</item>
+        <item>https://tinyurl.com/rky3fqz</item>
     </string-array>
 
     <string-array name="data_kanal">
