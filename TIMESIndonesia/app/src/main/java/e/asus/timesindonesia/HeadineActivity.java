@@ -1,6 +1,7 @@
 package e.asus.timesindonesia;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,11 +12,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.smarteist.autoimageslider.IndicatorAnimations;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+
 import java.util.ArrayList;
 
 import e.asus.timesindonesia.adapter.BeritaAdapter;
 import e.asus.timesindonesia.adapter.CardViewNewsAdapter;
 import e.asus.timesindonesia.adapter.FotoAdapter;
+import e.asus.timesindonesia.adapter.SliderAdapter;
 import e.asus.timesindonesia.adapter.TrendingViewAdapter;
 import e.asus.timesindonesia.model.Berita;
 import e.asus.timesindonesia.model.Foto;
@@ -40,13 +46,14 @@ public class HeadineActivity extends Fragment {
     private BeritaAdapter beritaAdapter;
     private ArrayList<Berita> beritas = new ArrayList<>();
 
+    private SliderView sliderView;
+    private SliderAdapter sliderAdapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_headine, container, false);
 
-        rvAtas = view.findViewById(R.id.rv_headline);
-        rvAtas.setHasFixedSize(true);
-
+        sliderView = view.findViewById(R.id.imageSlider);
         fotos.addAll(getListMovies());
         showRecyclerList();
 
@@ -54,6 +61,8 @@ public class HeadineActivity extends Fragment {
         rvBawah.setHasFixedSize(true);
         beritas.addAll(getListBerita());
         showRecyclerBerita();
+
+
 
         view.setFocusableInTouchMode(true);
         view.requestFocus();
@@ -83,16 +92,16 @@ public class HeadineActivity extends Fragment {
     }
 
     private void showRecyclerList() {
-        rvAtas.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true));
-        adapter = new FotoAdapter(fotos, getContext());
-        rvAtas.setAdapter(adapter);
-        adapter.setOnItemClickCallback(new FotoAdapter.OnItemClickCallback() {
-            @Override
-            public void onItemClicked(Foto data) {
-                Toast.makeText(getContext(), "Anda memilih " + data.getTitle(), Toast.LENGTH_SHORT).show();
-            }
-        });
+        sliderAdapter = new SliderAdapter(fotos, getContext());
+        sliderView.setSliderAdapter(sliderAdapter);
 
+        sliderView.setIndicatorAnimation(IndicatorAnimations.WORM); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+        sliderView.setIndicatorSelectedColor(Color.parseColor("#A50000"));
+        sliderView.setIndicatorUnselectedColor(Color.GRAY);
+        sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
+        sliderView.startAutoCycle();
     }
 
     public ArrayList<Berita> getListBerita() {
