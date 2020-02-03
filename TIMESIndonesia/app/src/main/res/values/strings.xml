@@ -103,6 +103,27 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan..</string>
         <item>Jika Calon Bupati Banyuwangi 2020 pilihan anda hayoo?</item>
     </string-array>
 
+    <string-array name="data_detail_polling">
+        <item>Firdaus Cik Olah</item>
+        <item>Hendra Gunawan</item>
+        <item>Prayitno</item>
+        <item>Ratna Mahmud Amin</item>
+    </string-array>
+
+    <string-array name="data_detail_polling_jabatan">
+        <item>FKetua Partai Golkar / Waket DPRD</item>
+        <item>Pertahanan / Birokrat</item>
+        <item>Anggota DPRD</item>
+        <item>Eks Birokrat</item>
+    </string-array>
+
+    <string-array name="data_detail_polling_number">
+        <item>A.</item>
+        <item>B.</item>
+        <item>C.</item>
+        <item>D.</item>
+    </string-array>
+
     <string-array name="data_polling_tgl">
         <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
         <item>Berakhir pada 16 Maret 2020, 12:00 AM</item>
@@ -187,4 +208,5 @@ di Indonesia dengan mesin yang dirancang ramah lingkungan...</item>
         <item>https://tinyurl.com/utceh26</item>
         <item>https://tinyurl.com/tf6x75g</item>
     </string-array>
+
 </resources>

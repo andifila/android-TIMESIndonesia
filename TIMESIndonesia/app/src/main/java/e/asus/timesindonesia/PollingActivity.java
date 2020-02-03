@@ -1,5 +1,6 @@
 package e.asus.timesindonesia;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,12 +9,16 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import e.asus.timesindonesia.adapter.PollingAdapter;
 import e.asus.timesindonesia.model.Polling;
+import e.asus.timesindonesia.model.PollingDetail;
+import e.asus.timesindonesia.model.trending;
 
 public class PollingActivity extends Fragment {
 
@@ -23,6 +28,7 @@ public class PollingActivity extends Fragment {
     private String[] dataTgl;
     private String[] dataTitle;
     private PollingAdapter adapter;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -68,9 +74,16 @@ public class PollingActivity extends Fragment {
         adapter.setOnItemClickCallback(new PollingAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Polling data) {
+                showSelectedMovie(data);
                 Toast.makeText(getContext(), "Anda memilih " + data.getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
 
+    }
+
+    private void showSelectedMovie(Polling movie) {
+        Intent intent = new Intent(getActivity(), PollingDetailActivity.class);
+        intent.putExtra("pollingdetail", movie);
+        startActivity(intent);
     }
 }

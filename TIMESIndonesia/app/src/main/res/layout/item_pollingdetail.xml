@@ -7,11 +7,14 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="@dimen/margin_8"
-    card_view:cardCornerRadius="@dimen/margin_4">
+    >
 
     <android.support.design.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view2"
+        card_view:cardCornerRadius="@dimen/margin_4"
+        card_view:cardBackgroundColor="@color/white">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"

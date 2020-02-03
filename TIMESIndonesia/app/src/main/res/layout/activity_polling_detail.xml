@@ -45,22 +45,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txt_judul"
-                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_8"
                 android:text="@string/pollingend"
                 android:textSize="@dimen/size_12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_judul" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_pollingdetail"
+            <RadioGroup
+                android:id="@+id/rg_polling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_hari" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_hari">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Firdaus Cik Olah\n(Ketua Partai Golkar / Waket DPRD)" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Hendra Gunawan\n(Pertahanan / Birokrat)" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Prayitno\n(Anggota DPRD)" />
+            </RadioGroup>
 
             <Button
+                android:id="@+id/btn_vote"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -69,9 +92,10 @@
                 android:text="V O T E"
                 android:textColor="#fff"
                 android:textSize="@dimen/size_16"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rv_pollingdetail" />
+                app:layout_constraintTop_toBottomOf="@+id/rg_polling" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
